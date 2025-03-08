@@ -19,6 +19,6 @@ if(Security::validatePassword("hola",$pass)){
 echo(json_encode(Security::createTokenJwt(Security::secretKey(),["hola"])));
 
 
-//prueba de la conexión BD
+//prueba la conexión BD
 use App\DB\connectionDB;
 connectionDB::getConnection();
