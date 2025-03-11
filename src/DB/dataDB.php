@@ -21,7 +21,7 @@ $data = array(
     "password" => $_ENV['PASSWORD'],
     "DB" => $_ENV['DB'],
     "IP" => $_ENV['IP'], 
-    "port" => $_ENV['PORT']
+    "PORT" => $_ENV['PORT']
 );
 
 /* conectamos a la base de datos llamando al metodo de la clase que retorna PDO*/
