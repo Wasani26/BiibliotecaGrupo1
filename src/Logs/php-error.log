@@ -150,3 +150,57 @@ Stack trace:
 [27-Feb-2025 08:53:04 America/Tegucigalpa] Conexión exitosa
 [27-Feb-2025 08:53:04 America/Tegucigalpa] Conexión exitosa
 [27-Feb-2025 08:53:04 America/Tegucigalpa] Conexión exitosa
+[11-Mar-2025 18:57:41 America/Tegucigalpa] PHP Warning:  Undefined array key "port" in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php on line 28
+[11-Mar-2025 18:57:42 America/Tegucigalpa] Conexión exitosa
+[11-Mar-2025 19:11:03 America/Tegucigalpa] PHP Warning:  Undefined array key "port" in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php on line 28
+[11-Mar-2025 19:11:03 America/Tegucigalpa] Conexión exitosa
+[11-Mar-2025 20:31:06 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contest() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:10
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 10
+[11-Mar-2025 20:32:22 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contest() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:10
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 10
+[11-Mar-2025 20:33:26 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contest() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:10
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 10
+[11-Mar-2025 20:34:32 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contest() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:10
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 10
+[11-Mar-2025 20:37:00 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:37:18 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:39:40 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:42:56 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:43:11 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:43:23 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
