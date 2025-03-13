@@ -9,6 +9,7 @@ return array(
     'App\\Config\\Security' => $baseDir . '/src/Config/Security.php',
     'App\\Config\\errorlogs' => $baseDir . '/src/Config/errorlogs.php',
     'App\\Config\\responseHTTP' => $baseDir . '/src/Config/responseHTTP.php',
+    'App\\Controllers\\UserController' => $baseDir . '/src/Controllers/UserController.php',
     'App\\DB\\connectionDB' => $baseDir . '/src/DB/connectionDB.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',

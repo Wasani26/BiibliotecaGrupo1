@@ -2,7 +2,8 @@
     use App\Config\errorlogs;
     use App\Config\responseHTTP;
     use App\Config\Security;
-    require dirname(__DIR__).'\vendor\autoload.php';
+    require dirname(__DIR__) . '/vendor/autoload.php';
+
     
     $url = explode('/',$_GET['route']);
     $lista = ['auth', 'user']; // lista de rutas permitidas

@@ -81,6 +81,7 @@ class ComposerStaticInite875ae8441d070d7dda5f4b47a2117aa
         'App\\Config\\Security' => __DIR__ . '/../..' . '/src/Config/Security.php',
         'App\\Config\\errorlogs' => __DIR__ . '/../..' . '/src/Config/errorlogs.php',
         'App\\Config\\responseHTTP' => __DIR__ . '/../..' . '/src/Config/responseHTTP.php',
+        'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/src/Controllers/UserController.php',
         'App\\DB\\connectionDB' => __DIR__ . '/../..' . '/src/DB/connectionDB.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',

@@ -25,7 +25,7 @@ $data = array(
 );
 
 /* conectamos a la base de datos llamando al metodo de la clase que retorna PDO*/
-$host = 'mysql:host='.$data['IP'].';'.'port='.$data['port'].';'.'dbname='.$data['DB']; //cadena necesaria
+$host = 'mysql:host='.$data['IP'].';'.'port='.$data['PORT'].';'.'dbname='.$data['DB']; //cadena necesaria
 
 //inicializamos el objeto conexión
 connectionDB::inicializar($host, $data['user'], $data['password']);

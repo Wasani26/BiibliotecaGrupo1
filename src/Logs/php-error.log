@@ -204,3 +204,124 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:52:35 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:52:50 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[11-Mar-2025 20:53:15 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:01:08 America/Tegucigalpa] Conexión exitosa
+[13-Mar-2025 00:04:59 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\userController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:10:52 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:12:32 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:25:02 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:25:13 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(26): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:46:07 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:13
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 13
+[13-Mar-2025 00:54:37 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 00:56:16 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 00:56:24 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 00:56:38 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 00:56:42 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 00:56:44 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 00:59:08 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:04:36 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:05:47 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:05:53 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:07:10 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:07:38 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:41:27 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:41:36 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[13-Mar-2025 01:46:24 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
