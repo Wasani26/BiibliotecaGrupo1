@@ -325,3 +325,8 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[16-Mar-2025 00:00:01 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
