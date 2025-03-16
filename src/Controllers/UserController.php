@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;  //para indicar el nombre de espacio donde esta ubicado controllers
+namespace App\Controllers; //para indicar el nombre de espacio donde esta ubicado controllers
 
 class UserController{
     private $method;

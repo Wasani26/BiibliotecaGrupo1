@@ -330,3 +330,59 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[16-Mar-2025 01:40:43 America/Tegucigalpa] Conexión exitosa
+[16-Mar-2025 01:44:39 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[16-Mar-2025 01:52:47 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 14
+[16-Mar-2025 02:03:20 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "responseHTTP" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:18
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 18
+[16-Mar-2025 02:31:18 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 02:31:29 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 02:32:28 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:16
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 16
+[16-Mar-2025 02:32:35 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:16
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 16
+[16-Mar-2025 02:38:32 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 02:39:05 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 02:39:16 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 02:39:25 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
