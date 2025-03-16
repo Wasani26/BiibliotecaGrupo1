@@ -386,3 +386,23 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 03:24:33 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 03:24:43 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 03:24:49 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 03:27:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::delete() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17

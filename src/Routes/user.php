@@ -14,6 +14,7 @@ $headers = getallheaders(); //capturando todas las cabeceras que nos envian
 
 $app = new UserController($method, $route, $params, $data, $headers);
 $app->post('user'); //llamada al metodo post con la ruta al recurso
+$app->delete('user'); //llamada de delete
 
 
 
