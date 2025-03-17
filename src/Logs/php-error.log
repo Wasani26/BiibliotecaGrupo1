@@ -406,3 +406,64 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php on line 17
+[16-Mar-2025 19:05:45 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[16-Mar-2025 19:05:45 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\DB\resposeHTTP" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:33
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php on line 33
+[16-Mar-2025 19:10:51 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[16-Mar-2025 19:16:03 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: PDO::__construct(): Error while reading greeting packet. PID=6932 in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[16-Mar-2025 19:28:41 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[16-Mar-2025 20:33:45 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\responseHTTP" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 34
+[16-Mar-2025 21:05:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function App\Controllers\emptyempty() in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:35
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 35
+[16-Mar-2025 21:05:57 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function App\Controllers\emptyempty() in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:35
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 35
+[16-Mar-2025 21:07:36 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\selg" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:38
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 38
