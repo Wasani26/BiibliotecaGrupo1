@@ -15,6 +15,9 @@ errorlogs::activa_error_logs();
 $dotenv = Dotenv::createImmutable(dirname(__DIR__,2));
 $dotenv->load(); 
 
+echo "Conectando a MySQL en " . $_ENV['IP'] . ":" . $_ENV['PORT'];
+
+
 //definimos un arreglos para simplificar y pasar la cadena de caracteres necesaria para abrir la conexion PDO
 $data = array(
     "user" => $_ENV['USER'],
