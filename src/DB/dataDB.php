@@ -12,7 +12,7 @@ use Dotenv\Dotenv;
 errorlogs::activa_error_logs();
 
 /* cargamos nuestras variables de entorno de nuestra conexion a BD*/
-//$dotenv = Dotenv::createImmutable(dirname(__DIR__,2));
+
 $dotenv = Dotenv::createImmutable(dirname(__DIR__,2));
 $dotenv->load(); 
 

@@ -577,3 +577,17 @@ Stack trace:
 #2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
 #3 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php on line 29
+[18-Mar-2025 12:05:17 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: PDO::__construct() expects at most 4 arguments, 5 given in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), '3306', Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php on line 29
+[18-Mar-2025 12:06:34 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [1049] Unknown database 'mydb' in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[18-Mar-2025 12:07:48 America/Tegucigalpa] Conexión exitosa
