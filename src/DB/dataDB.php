@@ -12,10 +12,12 @@ use Dotenv\Dotenv;
 errorlogs::activa_error_logs();
 
 /* cargamos nuestras variables de entorno de nuestra conexion a BD*/
+//$dotenv = Dotenv::createImmutable(dirname(__DIR__,2));
 $dotenv = Dotenv::createImmutable(dirname(__DIR__,2));
 $dotenv->load(); 
 
-echo "Conectando a MySQL en " . $_ENV['IP'] . ":" . $_ENV['PORT'];
+
+//echo "Conectando a MySQL en " . $_ENV['IP'] . ":" . $_ENV['PORT']; //para verificar a que puerto e IP esta conectandosé
 
 
 //definimos un arreglos para simplificar y pasar la cadena de caracteres necesaria para abrir la conexion PDO
@@ -30,5 +32,6 @@ $data = array(
 /* conectamos a la base de datos llamando al metodo de la clase que retorna PDO*/
 $host = 'mysql:host='.$data['IP'].';'.'port='.$data['PORT'].';'.'dbname='.$data['DB']; //cadena necesaria
 
+
 //inicializamos el objeto conexión
-connectionDB::inicializar($host, $data['user'], $data['password']);
+connectionDB::inicializar($host, $data['user'], $data['password'], $data['PORT']);

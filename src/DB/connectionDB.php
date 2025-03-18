@@ -10,21 +10,23 @@ class connectionDB{
     private static $host = ''; //arreglo de datos (servidor, puerto, etc...)
     private static $user = '';
     private static $pass = '';
+    private static $port = '';
 
-    final public static function inicializar($host, $user, $pass){
+    final public static function inicializar($host, $user, $pass, $port){
         //this or self?
         //self hace referencia a la clase para así mandar llamar funciones estáticas.
         //this hace referencia a un objeto ya instanciado para mandar llamar funciones de cualquier otro tipo
         self::$host = $host;
         self::$user = $user;
         self::$pass = $pass;
+        self::$port = $port;
     }
     //metodo que retorna la conexion
     final public static function getConnection(){
         try{
             //opciones de conexion
             $opt = [\PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC];
-            $pdo = new PDO(self::$host,self::$user,self::$pass, $opt);
+            $pdo = new PDO(self::$host,self::$user,self::$pass, self::$port, $opt);
             $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             error_log("Conexión exitosa");
             return $pdo;

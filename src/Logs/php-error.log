@@ -485,3 +485,95 @@ Stack trace:
 #1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
 #2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
 #3 {main}
+[17-Mar-2025 23:09:40 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[18-Mar-2025 02:12:06 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: PDO::__construct(): Error while reading greeting packet. PID=3768 in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[18-Mar-2025 02:15:03 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:27
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(27): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[18-Mar-2025 02:45:44 America/Tegucigalpa] Error: Variables de entorno de la base de datos no definidas.
+[18-Mar-2025 03:01:53 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [/BibliotecaGrupo1/.env\.env]. in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php(17): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): Composer\Autoload\ClassLoader->loadClass('App\\DB\\connecti...')
+#6 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[18-Mar-2025 03:02:09 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [/BibliotecaGrupo1/.env\.env]. in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php(17): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): Composer\Autoload\ClassLoader->loadClass('App\\DB\\connecti...')
+#6 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[18-Mar-2025 03:02:26 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [/BibliotecaGrupo1/.env\.env]. in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php(17): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): Composer\Autoload\ClassLoader->loadClass('App\\DB\\connecti...')
+#6 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[18-Mar-2025 03:09:48 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\BibliotecaGrupo1\.env\.env]. in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php(17): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): Composer\Autoload\ClassLoader->loadClass('App\\DB\\connecti...')
+#6 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[18-Mar-2025 03:12:22 America/Tegucigalpa] Error: Variables de entorno de la base de datos no definidas.
+[18-Mar-2025 03:13:42 America/Tegucigalpa] PHP Warning:  Undefined array key "PORT" in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php on line 34
+[18-Mar-2025 03:13:42 America/Tegucigalpa] PHP Warning:  Undefined array key "DB" in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php on line 34
+[18-Mar-2025 03:13:42 America/Tegucigalpa] Error: Variables de entorno de la base de datos no definidas.
+[18-Mar-2025 03:16:25 America/Tegucigalpa] PHP Warning:  Undefined array key "PORT" in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\dataDB.php on line 34
+[18-Mar-2025 03:16:25 America/Tegucigalpa] Error: Variables de entorno de la base de datos no definidas.
+[18-Mar-2025 03:17:06 America/Tegucigalpa] Error: Variables de entorno de la base de datos no definidas.
+[18-Mar-2025 03:17:19 America/Tegucigalpa] Error: Variables de entorno de la base de datos no definidas.
+[18-Mar-2025 03:18:01 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: PDO::__construct() expects at most 4 arguments, 5 given in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), '3306', Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php on line 29
+[18-Mar-2025 03:20:58 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: PDO::__construct() expects at most 4 arguments, 5 given in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), '3306', Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php on line 29
