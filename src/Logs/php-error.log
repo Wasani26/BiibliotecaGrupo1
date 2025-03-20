@@ -1,2 +1,12 @@
 [18-Mar-2025 12:07:48 America/Tegucigalpa] Conexión exitosa
 [19-Mar-2025 23:32:59 America/Tegucigalpa] Conexión exitosa
+[20-Mar-2025 05:34:36 America/Tegucigalpa] Conexión exitosa
+[20-Mar-2025 05:36:19 America/Tegucigalpa] PHP Warning:  Undefined variable $thiss in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:36:19 America/Tegucigalpa] PHP Warning:  Attempt to read property "data" on null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:36:19 America/Tegucigalpa] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:37:20 America/Tegucigalpa] PHP Warning:  Undefined variable $thiss in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:37:20 America/Tegucigalpa] PHP Warning:  Attempt to read property "data" on null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:37:20 America/Tegucigalpa] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Undefined variable $thiss in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Attempt to read property "data" on null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44

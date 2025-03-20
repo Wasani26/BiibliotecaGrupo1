@@ -41,7 +41,7 @@ public function __construct($method,$route,$params,$data,$headers){
         }else if (!preg_match(self::$validar_numero, $this->data['Telefono'])){
              echo json_encode(responseHTTP::status400('Este campo Telefono solo acepta números'));
              //validamos correo usando filter_var
-        }else if (!filter_var($thiss->data['Correo_electronico'], FILTER_VALIDATE_EMAIL)){
+        }else if (!filter_var($this->data['Correo_electronico'], FILTER_VALIDATE_EMAIL)){
         echo json_encode(responseHTTP::status400('El formato de correo es incorrecto'));
           //validar Estado
         }else if (!preg_match(self::$validar_texto, $this->data['Estado'])){
