@@ -7,12 +7,12 @@ use PDO; //usaremos el objeto PDO para interactuar con la BD
 require __DIR__.'/dataDB.php'; //__DIR__ estamos en la misma carpeta
 
 class connectionDB{
-    private static $host = ''; //arreglo de datos (servidor, puerto, etc...)
-    private static $user = '';
-    private static $pass = '';
+    private static $host = ' '; //arreglo de datos (servidor, puerto, etc...)
+    private static $user = ' ';
+    private static $pass = ' ';
    
 
-    final public static function inicializar($host, $user, $pass, $port){
+    final public static function inicializar($host, $user, $pass, $port=3307){
         //this or self?
         //self hace referencia a la clase para así mandar llamar funciones estáticas.
         //this hace referencia a un objeto ya instanciado para mandar llamar funciones de cualquier otro tipo
@@ -36,5 +36,6 @@ class connectionDB{
 
         }
     }
+
    
 }
