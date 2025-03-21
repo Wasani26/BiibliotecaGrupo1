@@ -1,0 +1,59 @@
+<?php
+
+use App\DB\connectionDB;
+
+class BookModel extends connectionDB{
+    private static $Titulo;
+    private static $autor;
+    private static $ISBN;
+    private static $Categoria;
+    private static $Disponibilidad;
+    private static $Ubicacion_biblioteca;
+    private static $Resumen;
+    private static $Portada;
+
+    public function __construct($Titulo, $autor, $ISBN, $Categoria, $Disponibilidad, $Ubicacion_biblioteca, $Resumen, $Portada){
+        $this->Titulo=$Titulo;
+        $this->autor=$autor;
+        $this->ISBN=$ISBN;
+        $this->Categoria;
+        $this->Disponibilidad=$Disponibilidad;
+        $this->Ubicacion_biblioteca=$Ubicacion_biblioteca;
+        $this->Resumen=$Resumen;
+        $this->Portada=$Portada;
+    }
+
+    public function getTitulo(){
+        return $this->Titulo;
+    }
+
+    public function getautor(){
+        return $this->autor;
+    }
+
+    public function getISBN(){
+        return $this->ISBN;
+    }
+
+    public function getCategoria(){
+        return $this->Categoria;
+    }
+
+    public function getDisponibilidad(){
+        return $this->Disponibilidad;
+    }
+
+    public function getUbicacion_biblioteca(){
+        return $this->Ubicacion_biblioteca;
+    }
+
+    public function getResumen(){
+        return $this->Resumen;
+    }
+
+    public function getPortada(){
+        return $this->Portada;
+    }
+}
+
+?>
