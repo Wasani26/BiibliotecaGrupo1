@@ -10,3 +10,4 @@
 [20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Undefined variable $thiss in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
 [20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Attempt to read property "data" on null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
 [20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
+[21-Mar-2025 02:10:03 America/Tegucigalpa] Conexión exitosa

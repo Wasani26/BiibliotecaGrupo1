@@ -47,10 +47,11 @@ public function __construct($method,$route,$params,$data,$headers){
         }else if (!preg_match(self::$validar_texto, $this->data['Estado'])){
             echo json_encode(responseHTTP::status400('Este campo solo permite texto'));
             //validar rol
-        }else if (!preg_match(self::$validar_rol,$this->data['Rol'])){
+        }else if (!preg_match(self::$validar_rol,$this->data['Rol_Id_Rol'])){
           echo json_encode(responseHTTP::status400('El rol puesto es invalido'));
         }else{
-        
+         new UserModel($this->data);
+         echo json_encode(UserModel::post());
         }      
         //echo json_encode('post');
         exit;

@@ -52,6 +52,9 @@ CREATE TABLE IF NOT EXISTS `biblioteca`.`Usuarios` (
   `Nombre` VARCHAR(50) NULL,
   `Telefono` VARCHAR(15) NULL,
   `Contrasena` VARCHAR(45) NULL,
+  `confirmarContrasena` VARCHAR(45) NULL,
+  `IDToken`  VARCHAR(255) NULL,
+  `fecha` DATETIME NULL,
   `Correo_electronico` VARCHAR(45) NULL,
   `Estado` VARCHAR(20) NULL,
   `Rol_Id_Rol` INT NOT NULL,
@@ -318,69 +321,3 @@ CREATE TABLE IF NOT EXISTS `biblioteca`.`view2` (`id` INT);
 
 
 /*procedimientos almacenados*/
--- -----------------------------------------------------
--- procedure Actualizar_Usuario
--- -----------------------------------------------------
-
-DELIMITER $$
-USE `mydb`$$
-CREATE PROCEDURE `Actualizar_Usuario`(
-IN `p_Id_usuarios` INT,
-IN `p_Nombre` VARCHAR(50),
-IN `p_Telefono` INT,
-IN `p_Contraseña` VARCHAR(45),
-IN `p_Correo_electronico` VARCHAR(45),
-IN `p_Estado` VARCHAR(20),
-IN `p_Id_rol` INT
-)
-BEGIN
-UPDATE Usuarios
-    SET Nombre = p_Nombre,
-        Telefono = p_Telefono,
-        Contraseña = p_Contraseña,
-        Correo_electronico = p_Correo_electronico,
-        Estado = p_Estado,
-        Rol_Id_Rol = p_Id_rol
-    WHERE Id_Usuarios = p_Id_usuarios;
-END$$
-
-DELIMITER ;
-
--- -----------------------------------------------------
--- procedure Obtener_Reservas_Usuario
--- -----------------------------------------------------
-
-DELIMITER $$
-USE `mydb`$$
-CREATE PROCEDURE `Obtener_Reservas_Usuario` (
-IN `p Id_usuario` INT
-)
-BEGIN
- SELECT * FROM Reservas WHERE Usuarios_Id_Usuarios = Id_Usuarios;
-END$$
-
-DELIMITER ;
-
--- -----------------------------------------------------
--- procedure Crear_Reserva
--- -----------------------------------------------------
-
-DELIMITER $$
-USE `mydb`$$
-CREATE PROCEDURE `Crear_Reserva` (
-IN `p_Id_Reservas` INT,
-IN `p_Fecha_Reserva` Date,
-IN `p_ Id_Libros` INT,
-IN `p_ Id_Usuarios` INT
-
-)
-BEGIN
-INSERT INTO Reservas (Id_Reservas, Fecha_reserva, Libros_Id_Libros, Usuarios_Id_Usuarios) 
-  VALUES (Id_Reservas,Fecha_Reserva, Id_libros, Id_Usuarios);
-END$$
-
-DELIMITER ;
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
