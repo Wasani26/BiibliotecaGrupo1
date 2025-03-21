@@ -1,11 +1,12 @@
 <?php
-namespace App\Models;
-use\DB\connectionDB;
-use\DB\sql;
+namespace App\Models\UserModel;
+use App\DB\connectionDB;
+use App\DB\sql;
 use App\Config\responseHTTP;
 use App\Config\Security;
 
-class userModel extends connectionDB{
+
+class UserModel extends connectionDB{
     private static $Nombre;
     private static $Telefono;
     private static $Contrasena;
@@ -24,7 +25,7 @@ class userModel extends connectionDB{
         self::$Nombre  = $data['Nombre'];
         self::$Telefono  =  $data['Telefono'];
         self::$Contrasena  =  $data['Contrasena'];
-        self::$confirmaContrasena  =  $data['confirmaContrasena '];
+        self::$confirmaContrasena  =  $data['confirmaContrasena'];
         self::$IDToken  =  $data['IDToken'];
         self::$fecha  =  $data['fecha '];
         self::$Correo_electronico =  $data['Correo_electronico'];
@@ -56,7 +57,7 @@ class userModel extends connectionDB{
 
 
  //método que registra el usuario
- final public static function post(){
+ final public static function post(array $data){
    //validación para correo 
    if (sql::VerificarRegistro('CALL VerificarCorreoExistente(:Correo_electronico)',':Correo_electronico', self::getCorreo_electronico())){
     return responseHTTP::status400('El correo ya existe en la base de datos');
@@ -65,8 +66,8 @@ class userModel extends connectionDB{
      self::setfecha(date("Y-m-d H:i:s")); //fecha de creación 
    }
 
-   //hash 
-   $hashedPassword = Security::createPassword(self::getContrasena());
+   //hash
+   //$hashedPassword = Security::createPassword(self::getContrasena());
 
    try {
     $con = self::getConnection(); //obtener conexión
@@ -75,7 +76,8 @@ class userModel extends connectionDB{
     $stmt->execute([
       ':Nombre' => self::getNombre(),
       ':Telefono' => self::getTelefono(),
-      ':Contrasena' => $hashedPassword,
+      //':Contrasena' => $hashedPassword,
+      ':Contrasena' => password_hash(self::getContrasena(), PASSWORD_DEFAULT),
       ':confirmaContrasena' => self::getconfirmaContrasena(),
       ':IDToken' => self::getIDToken(),
       ':fecha' => self::getfecha(),
@@ -91,8 +93,8 @@ class userModel extends connectionDB{
       return responseHTTP::status500('Error al registrar el usuario');
     }
    } catch (\PDOException $e){
-    error_log('UserModel::post() -> ' . $e);
-    return responseHTTP::status500('Error al registrar el usuario');
+    error_log('UserModel::post() -> ' .$e);
+     die(json_encode(responseHTTP::status500()));
    }
  }
  

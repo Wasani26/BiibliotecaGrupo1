@@ -23,3 +23,34 @@ Stack trace:
 #1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
 #2 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 54
+[21-Mar-2025 09:56:11 America/Tegucigalpa] Conexión exitosa
+[21-Mar-2025 09:57:17 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[21-Mar-2025 09:59:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[21-Mar-2025 10:01:24 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[21-Mar-2025 10:09:54 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[21-Mar-2025 10:11:24 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
