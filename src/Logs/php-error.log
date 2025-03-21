@@ -11,3 +11,15 @@
 [20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Attempt to read property "data" on null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
 [20-Mar-2025 05:37:39 America/Tegucigalpa] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 44
 [21-Mar-2025 02:10:03 America/Tegucigalpa] Conexión exitosa
+[21-Mar-2025 04:46:42 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[21-Mar-2025 04:52:06 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:54
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 54

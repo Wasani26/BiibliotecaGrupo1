@@ -31,7 +31,7 @@ public function __construct($method,$route,$params,$data,$headers){
     //validación de method y endpoint
     if($this->method == 'post' && $endpoint == $this->route){
         //validacion que no vengan vacios
-        if(empty($this->data['Nombre']) || empty($this->data['Telefono']) || empty($this->data['Correo_electronico']) || empty($this->data['Estado']) || empty($this->data['Rol'])  ||
+        if(empty($this->data['Nombre']) || empty($this->data['Telefono']) || empty($this->data['Correo_electronico']) || empty($this->data['Estado']) || empty($this->data['Rol_Id_Rol'])  ||
         empty($this->data['Contrasena']) || empty($this->data['confirmaContrasena'])){
             echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos'));
             //validacion de campos de texto mediante preg_match
