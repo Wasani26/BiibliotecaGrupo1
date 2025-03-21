@@ -8,19 +8,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema biblioteca
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema biblioteca
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `biblioteca` DEFAULT CHARACTER SET utf8 ;
+USE `biblioteca` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Libros`
+-- Table `biblioteca`.`Libros`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Libros` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Libros` (
   `Id_Libros` INT NOT NULL,
   `Titulo` VARCHAR(60) NULL,
   `autor` VARCHAR(60) NULL,
@@ -35,9 +35,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Rol`
+-- Table `biblioteca`.`Rol`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Rol` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Rol` (
   `Id_Rol` INT NOT NULL,
   `Nombre_rol` VARCHAR(45) NULL,
   PRIMARY KEY (`Id_Rol`))
@@ -45,9 +45,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Usuarios`
+-- Table `biblioteca`.`Usuarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Usuarios` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Usuarios` (
   `Id_Usuarios` INT NOT NULL,
   `Nombre` VARCHAR(50) NULL,
   `Telefono` VARCHAR(15) NULL,
@@ -59,16 +59,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Usuarios` (
   INDEX `fk_Usuarios_Rol_idx` (`Rol_Id_Rol` ASC),
   CONSTRAINT `fk_Usuarios_Rol`
     FOREIGN KEY (`Rol_Id_Rol`)
-    REFERENCES `mydb`.`Rol` (`Id_Rol`)
+    REFERENCES `biblioteca`.`Rol` (`Id_Rol`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Historial_Prestamos`
+-- Table `biblioteca`.`Historial_Prestamos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Historial_Prestamos` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Historial_Prestamos` (
   `Id_Historial_Prestamos` INT NOT NULL AUTO_INCREMENT,
   `Fecha_prestamo` DATE NULL,
   `Fecha_devolucion` DATE NULL,
@@ -79,12 +79,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Historial_Prestamos` (
   INDEX `fk_Historial_Prestamos_Usuarios1_idx` (`Usuarios_Id_Usuarios` ASC),
   CONSTRAINT `fk_Historial_Prestamos_Libros1`
     FOREIGN KEY (`Libros_Id_Libros`)
-    REFERENCES `mydb`.`Libros` (`Id_Libros`)
+    REFERENCES `biblioteca`.`Libros` (`Id_Libros`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_Historial_Prestamos_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE CASCADE
     ON UPDATE CASCADE
 ) ENGINE = InnoDB;
@@ -92,9 +92,9 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Historial_Prestamos` (
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Recomendaciones`
+-- Table `biblioteca`.`Recomendaciones`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Recomendaciones` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Recomendaciones` (
   `Id_Recomendaciones` INT NOT NULL,
   `Fecha_calificacion` DATE NULL,
   `Calificacion` INT NULL,
@@ -105,21 +105,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Recomendaciones` (
   INDEX `fk_Recomendaciones_Libros1_idx` (`Libros_Id_Libros` ASC),
   CONSTRAINT `fk_Recomendaciones_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Recomendaciones_Libros1`
     FOREIGN KEY (`Libros_Id_Libros`)
-    REFERENCES `mydb`.`Libros` (`Id_Libros`)
+    REFERENCES `biblioteca`.`Libros` (`Id_Libros`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Reservas`
+-- Table `biblioteca`.`Reservas`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Reservas` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Reservas` (
   `Id_Reservas` INT NOT NULL,
   `Fecha_reserva` DATE NULL,
   `Usuarios_Id_Usuarios` INT NOT NULL,
@@ -129,21 +129,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Reservas` (
   INDEX `fk_Reservas_Libros1_idx` (`Libros_Id_Libros` ASC),
   CONSTRAINT `fk_Reservas_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Reservas_Libros1`
     FOREIGN KEY (`Libros_Id_Libros`)
-    REFERENCES `mydb`.`Libros` (`Id_Libros`)
+    REFERENCES `biblioteca`.`Libros` (`Id_Libros`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Comentarios`
+-- Table `biblioteca`.`Comentarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Comentarios` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Comentarios` (
   `Id_Comentarios` INT NOT NULL,
   `Comentario` VARCHAR(45) NULL,
   `Evaluacion` VARCHAR(45) NULL,
@@ -154,21 +154,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Comentarios` (
   INDEX `fk_Comentarios_Libros1_idx` (`Libros_Id_Libros` ASC),
   CONSTRAINT `fk_Comentarios_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Comentarios_Libros1`
     FOREIGN KEY (`Libros_Id_Libros`)
-    REFERENCES `mydb`.`Libros` (`Id_Libros`)
+    REFERENCES `biblioteca`.`Libros` (`Id_Libros`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Devoluciones`
+-- Table `biblioteca`.`Devoluciones`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Devoluciones` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Devoluciones` (
   `Id_Devoluciones` INT NOT NULL,
   `Fecha_devolucion` DATE NULL,
   `Historial_Prestamos_Id_Historial_Prestamos` INT NOT NULL,
@@ -178,21 +178,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Devoluciones` (
   INDEX `fk_Devoluciones_Usuarios1_idx` (`Usuarios_Id_Usuarios` ASC),
   CONSTRAINT `fk_Devoluciones_Historial_Prestamos1`
     FOREIGN KEY (`Historial_Prestamos_Id_Historial_Prestamos`)
-    REFERENCES `mydb`.`Historial_Prestamos` (`Id_Historial_Prestamos`)
+    REFERENCES `biblioteca`.`Historial_Prestamos` (`Id_Historial_Prestamos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Devoluciones_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Catalogo_Libros`
+-- Table `biblioteca`.`Catalogo_Libros`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Catalogo_Libros` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Catalogo_Libros` (
   `Id_Catalogo_Libros` INT NOT NULL,
   `Nombre` VARCHAR(45) NULL,
   `Libros_Id_Libros` INT NOT NULL,
@@ -200,16 +200,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Catalogo_Libros` (
   INDEX `fk_Catalogo_Libros_Libros1_idx` (`Libros_Id_Libros` ASC),
   CONSTRAINT `fk_Catalogo_Libros_Libros1`
     FOREIGN KEY (`Libros_Id_Libros`)
-    REFERENCES `mydb`.`Libros` (`Id_Libros`)
+    REFERENCES `biblioteca`.`Libros` (`Id_Libros`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Notificaciones`
+-- Table `biblioteca`.`Notificaciones`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Notificaciones` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Notificaciones` (
   `Id_Notificaciones` INT NOT NULL,
   `Mensaje` VARCHAR(90) NULL,
   `Fecha_envio` DATE NULL,
@@ -218,16 +218,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Notificaciones` (
   INDEX `fk_Notificaciones_Usuarios1_idx` (`Usuarios_Id_Usuarios` ASC),
   CONSTRAINT `fk_Notificaciones_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Pedidos`
+-- Table `biblioteca`.`Pedidos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Pedidos` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Pedidos` (
   `Id_Pedidos` INT NOT NULL,
   `Fecha_pedidos` DATE NULL,
   `Monto_total` INT NULL,
@@ -237,16 +237,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Pedidos` (
   INDEX `fk_Pedidos_Usuarios1_idx` (`Usuarios_Id_Usuarios` ASC),
   CONSTRAINT `fk_Pedidos_Usuarios1`
     FOREIGN KEY (`Usuarios_Id_Usuarios`)
-    REFERENCES `mydb`.`Usuarios` (`Id_Usuarios`)
+    REFERENCES `biblioteca`.`Usuarios` (`Id_Usuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Detalle_Pedidos`
+-- Table `biblioteca`.`Detalle_Pedidos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Detalle_Pedidos` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Detalle_Pedidos` (
   `Id_Detalle_Pedidos` INT NOT NULL,
   `Cantidad` INT NULL,
   `Precio_unitario` INT NULL,
@@ -257,21 +257,21 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Detalle_Pedidos` (
   INDEX `fk_Detalle_Pedidos_Libros1_idx` (`Libros_Id_Libros` ASC),
   CONSTRAINT `fk_Detalle_Pedidos_Pedidos1`
     FOREIGN KEY (`Pedidos_Id_Pedidos`)
-    REFERENCES `mydb`.`Pedidos` (`Id_Pedidos`)
+    REFERENCES `biblioteca`.`Pedidos` (`Id_Pedidos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Detalle_Pedidos_Libros1`
     FOREIGN KEY (`Libros_Id_Libros`)
-    REFERENCES `mydb`.`Libros` (`Id_Libros`)
+    REFERENCES `biblioteca`.`Libros` (`Id_Libros`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Pagos`
+-- Table `biblioteca`.`Pagos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Pagos` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Pagos` (
   `Id_Pagos` INT NOT NULL,
   `Fecha_pago` DATE NULL,
   `Monto_pago` INT NULL,
@@ -281,16 +281,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Pagos` (
   INDEX `fk_Pagos_Pedidos1_idx` (`Pedidos_Id_Pedidos` ASC),
   CONSTRAINT `fk_Pagos_Pedidos1`
     FOREIGN KEY (`Pedidos_Id_Pedidos`)
-    REFERENCES `mydb`.`Pedidos` (`Id_Pedidos`)
+    REFERENCES `biblioteca`.`Pedidos` (`Id_Pedidos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Envios`
+-- Table `biblioteca`.`Envios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Envios` (
+CREATE TABLE IF NOT EXISTS `biblioteca`.`Envios` (
   `Id_Envios` INT NOT NULL,
   `Fecha_envio` DATE NULL,
   `Direccion_envio` VARCHAR(60) NULL,
@@ -299,20 +299,88 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Envios` (
   INDEX `fk_Envios_Pedidos1_idx` (`Pedidos_Id_Pedidos` ASC),
   CONSTRAINT `fk_Envios_Pedidos1`
     FOREIGN KEY (`Pedidos_Id_Pedidos`)
-    REFERENCES `mydb`.`Pedidos` (`Id_Pedidos`)
+    REFERENCES `biblioteca`.`Pedidos` (`Id_Pedidos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-USE `mydb` ;
+USE `biblioteca` ;
 
 -- -----------------------------------------------------
--- Placeholder table for view `mydb`.`view1`
+-- Placeholder table for view `biblioteca`.`view1`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`view1` (`id` INT);
+CREATE TABLE IF NOT EXISTS `biblioteca`.`view1` (`id` INT);
 
 -- -----------------------------------------------------
--- Placeholder table for view `mydb`.`view2`
+-- Placeholder table for view `biblioteca`.`view2`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`view2` (`id` INT);
+CREATE TABLE IF NOT EXISTS `biblioteca`.`view2` (`id` INT);
 
+
+/*procedimientos almacenados*/
+-- -----------------------------------------------------
+-- procedure Actualizar_Usuario
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `mydb`$$
+CREATE PROCEDURE `Actualizar_Usuario`(
+IN `p_Id_usuarios` INT,
+IN `p_Nombre` VARCHAR(50),
+IN `p_Telefono` INT,
+IN `p_Contraseña` VARCHAR(45),
+IN `p_Correo_electronico` VARCHAR(45),
+IN `p_Estado` VARCHAR(20),
+IN `p_Id_rol` INT
+)
+BEGIN
+UPDATE Usuarios
+    SET Nombre = p_Nombre,
+        Telefono = p_Telefono,
+        Contraseña = p_Contraseña,
+        Correo_electronico = p_Correo_electronico,
+        Estado = p_Estado,
+        Rol_Id_Rol = p_Id_rol
+    WHERE Id_Usuarios = p_Id_usuarios;
+END$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure Obtener_Reservas_Usuario
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `mydb`$$
+CREATE PROCEDURE `Obtener_Reservas_Usuario` (
+IN `p Id_usuario` INT
+)
+BEGIN
+ SELECT * FROM Reservas WHERE Usuarios_Id_Usuarios = Id_Usuarios;
+END$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure Crear_Reserva
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `mydb`$$
+CREATE PROCEDURE `Crear_Reserva` (
+IN `p_Id_Reservas` INT,
+IN `p_Fecha_Reserva` Date,
+IN `p_ Id_Libros` INT,
+IN `p_ Id_Usuarios` INT
+
+)
+BEGIN
+INSERT INTO Reservas (Id_Reservas, Fecha_reserva, Libros_Id_Libros, Usuarios_Id_Usuarios) 
+  VALUES (Id_Reservas,Fecha_Reserva, Id_libros, Id_Usuarios);
+END$$
+
+DELIMITER ;
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
