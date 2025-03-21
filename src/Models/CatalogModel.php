@@ -1,10 +1,17 @@
 <?php
+namespace App\Models;
+use\DB\conectionDB; 
+use\DB\sql;
+use App\Config\responseHTTP;
+use App\DB\connectionDB;
 
-class CatalogoLibros {
-    private $db;
+//incompleto//
+class CatalogoLibros extends connectionDB {
+    private static $Nombre;
 
+    //Construtor//
     public function __construct($dataDB) {
-        $this->db = $dataDB;
+        
     }
 }
 

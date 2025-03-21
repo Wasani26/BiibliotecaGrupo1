@@ -23,7 +23,7 @@ class userModel extends connectionDB{
         self::$Correo_electronico =  $data['Correo_electronico'];
         self::$Estado  =  $data['Estado'];
         self::$Rol  =  $data['Rol'];
-        self::$Contrasena  =  $data['Contarsena'];
+        self::$Contrasena  =  $data['Contrasena'];
         self::$confirmaContrasena  =  $data['confirmaContrasena '];
         self::$IDToken  =  $data['IDToken'];
         self::$fecha  =  $data['fecha '];
