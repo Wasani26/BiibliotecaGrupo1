@@ -54,3 +54,10 @@ Stack trace:
 #1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
 #2 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[21-Mar-2025 15:40:00 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\auth.php(24): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+[21-Mar-2025 15:56:59 America/Tegucigalpa] Conexión exitosa
