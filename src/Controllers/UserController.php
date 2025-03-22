@@ -2,8 +2,6 @@
 
 namespace App\Controllers; //para indicar el nombre de espacio donde esta ubicado controllers
 use App\Config\responseHTTP;
-use App\Config\Security;
-use App\Models\UserModel;
 
 
 class UserController{

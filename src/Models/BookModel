@@ -16,7 +16,7 @@ class BookModel extends connectionDB{
         $this->Titulo=$Titulo;
         $this->autor=$autor;
         $this->ISBN=$ISBN;
-        $this->Categoria=$Categoria;
+        $this->Categoria;
         $this->Disponibilidad=$Disponibilidad;
         $this->Ubicacion_biblioteca=$Ubicacion_biblioteca;
         $this->Resumen=$Resumen;
@@ -53,38 +53,6 @@ class BookModel extends connectionDB{
 
     public function getPortada(){
         return $this->Portada;
-    }
-
-    public function setTitulo($Titulo): void {
-        $this->Titulo=$Titulo;
-    }
-
-    public function setautor($autor): void {
-        $this->autor=$autor;
-    }
-
-    public function setISBN($ISBN): void {
-        $this->ISBN=$ISBN;
-    }
-
-    public function setCategoria($Categoria): void {
-        $this->Categoria=$Categoria;
-    }
-
-    public function setDisponibilidad($Disponibilidad): void {
-        $this->Disponibilidad=$Disponibilidad;
-    }
-
-    public function setUbicacion_biblioteca($Ubicacion_biblioteca): void {
-        $this->Ubicacion_biblioteca=$Ubicacion_biblioteca;
-    }
-
-    public function setResumen($Resumen): void {
-        $this->Resumen=$Resumen;
-    }
-
-    public function setPortada($Portada): void {
-        $this->Portada=$Portada;
     }
 }
 

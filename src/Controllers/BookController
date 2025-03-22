@@ -1,18 +1,15 @@
 <?php
 namespace App\Controllers;
 use App\Config\responseHTTP;
-use BookModel;
-//incompleto//
-class BookController{
-    public function MostarLibros (){
-        $Id_Libros=BookModel::obtenerlibros();
-    }
 
-    public function AgregarLibro ($titulo, $autor, $Categoria){
-        BookModel::AgregarLibro($titulo, $autor, $Categoria);
-        header()
-    } 
-    
+//incompleto//
+class BookController {
+
+
+    //manejo de libros
+
+
+
 }
 
 ?>
