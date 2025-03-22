@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `biblioteca`.`Usuarios` (
   `Nombre` VARCHAR(50) NULL,
   `Telefono` VARCHAR(15) NULL,
   `Contrasena` VARCHAR(45) NULL,
-  `confirmarContrasena` VARCHAR(45) NULL,
+  `confirmaContrasena` VARCHAR(45) NULL,
   `IDToken`  VARCHAR(255) NULL,
   `fecha` DATETIME NULL,
   `Correo_electronico` VARCHAR(45) NULL,
