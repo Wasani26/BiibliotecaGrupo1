@@ -121,3 +121,29 @@ Stack trace:
 #2 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
 #3 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
 #4 {main}
+[28-Mar-2025 15:25:45 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 15:25:47 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 15:25:48 America/Tegucigalpa] UserModel::post() -> PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`usuarios`, CONSTRAINT `fk_Usuarios_Rol` FOREIGN KEY (`Rol_Id_Rol`) REFERENCES `rol` (`Id_Rol_Rol`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:77
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(77): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(61): App\Models\UserModel::post()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#4 {main}
+[28-Mar-2025 15:57:33 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 15:57:33 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:05:31 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:05:31 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:05:31 America/Tegucigalpa] UserModel::post() -> PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:77
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(77): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(61): App\Models\UserModel::post()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#4 {main}
+[28-Mar-2025 16:40:19 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:40:19 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:43:56 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:43:57 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:54:27 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 16:54:27 America/Tegucigalpa] Conexión exitosa
