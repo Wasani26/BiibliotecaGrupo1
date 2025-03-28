@@ -2,6 +2,8 @@
 
 namespace App\Controllers; //para indicar el nombre de espacio donde esta ubicado controllers
 use App\Config\responseHTTP;
+use App\Config\Security;
+use App\Models\UserModel;
 
 
 class UserController{
@@ -16,6 +18,11 @@ class UserController{
      private static $validar_rol = '/^[1,2,3]{1,1}$/'; // Valida roles permitidos (1, 2 o 3)
      private static $validar_numero = '/^[0-9]+$/'; // Valida solo números
      private static $validar_texto = '/^[a-zA-Z]+$/'; // Valida solo texto
+     private static $validarTelefono = '/^\+?[0-9\s\-()]{7,15}$/'; // Permite:
+      // - Números con signo "+" al inicio (opcional)
+      // - Dígitos del 0 al 9
+      // - Espacios, guiones, y paréntesis
+      // - Una longitud de 7 a 15 caracteres (dependiendo del estándar que sigas)
 
 
 public function __construct($method,$route,$params,$data,$headers){
@@ -38,10 +45,10 @@ public function __construct($method,$route,$params,$data,$headers){
         }else if (!preg_match(self::$validar_texto, $this->data['Nombre'])){
             echo json_encode(responseHTTP::status400('Este campo solo permite texto'));
             //lo mismo evaluamos para numeros
-        }else if (!preg_match(self::$validar_numero, $this->data['Telefono'])){
-             echo json_encode(responseHTTP::status400('Este campo Telefono solo acepta números'));
-             //validamos correo usando filter_var
-        }else if (!filter_var($this->data['Correo_electronico'], FILTER_VALIDATE_EMAIL)){
+        }else if(!preg_match(self::$validarTelefono, $this->data['Telefono'])) {
+            echo json_encode(responseHTTP::status400('El campo Teléfono no tiene un formato válido'));
+        }
+        else if (!filter_var($this->data['Correo_electronico'], FILTER_VALIDATE_EMAIL)){
         echo json_encode(responseHTTP::status400('El formato de correo es incorrecto'));
           //validar Estado
         }else if (!preg_match(self::$validar_texto, $this->data['Estado'])){

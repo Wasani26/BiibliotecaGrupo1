@@ -1,11 +1,12 @@
 <?php
 
-namespace App\db;
+namespace App\DB;
+use App\Config\responseHTTP;
 
 class sql extends connectionDB{
 
     //construimos un metodo que me permitira verificar si existe un registro en la BD bajo algunas condiciones
-    public static function verificarRegistro($sql, $condicion, $params){
+    final public static function verificarRegistro($sql, $condicion, $params){
         try{
             //abrimos la conexion 
             $con = self::getConnection();
@@ -15,7 +16,7 @@ class sql extends connectionDB{
             ]);
 
             //recorre y cunta los datos retornados
-            $res = ($query->rowCount() == 0) ? false : true;
+            $res = ($query->rowCount() > 0) ? TRUE : FALSE;
 
             return $res; //retorna la respuesta
         }catch (\PDOException $e){

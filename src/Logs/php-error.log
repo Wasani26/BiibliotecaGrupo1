@@ -54,3 +54,70 @@ Stack trace:
 #1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
 #2 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[28-Mar-2025 10:01:45 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 10:05:58 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[28-Mar-2025 10:07:54 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[28-Mar-2025 10:08:54 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:53
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 53
+[28-Mar-2025 10:20:41 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Config\UserModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php:55
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 55
+[28-Mar-2025 10:22:38 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 10:22:38 America/Tegucigalpa] sql::verificaRegistro -> PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'biblioteca.usuarios' doesn't exist in engine in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\sql.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\sql.php(14): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(63): App\DB\sql::verificarRegistro('CALL VerificarC...', ':Correo_electro...', 'awmartinez@unah...')
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(56): App\Models\UserModel::post()
+#3 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#5 {main}
+[28-Mar-2025 12:47:42 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 12:47:43 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 12:47:43 America/Tegucigalpa] UserModel::post() -> PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`usuarios`, CONSTRAINT `fk_Usuarios_Rol` FOREIGN KEY (`Rol_Id_Rol`) REFERENCES `rol` (`Id_Rol_Rol`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:77
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(77): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(56): App\Models\UserModel::post()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#4 {main}
+[28-Mar-2025 12:56:15 America/Tegucigalpa] PHP Warning:  Undefined variable $validarTelefono in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:56:15 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #1 ($pattern) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:56:15 America/Tegucigalpa] PHP Warning:  preg_match(): Empty regular expression in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:56:23 America/Tegucigalpa] PHP Warning:  Undefined variable $validarTelefono in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:56:23 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #1 ($pattern) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:56:23 America/Tegucigalpa] PHP Warning:  preg_match(): Empty regular expression in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:57:00 America/Tegucigalpa] PHP Warning:  Undefined variable $validarTelefono in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:57:00 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #1 ($pattern) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 12:57:00 America/Tegucigalpa] PHP Warning:  preg_match(): Empty regular expression in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:01:09 America/Tegucigalpa] PHP Warning:  Undefined variable $validarTelefono in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:01:09 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #1 ($pattern) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:01:09 America/Tegucigalpa] PHP Warning:  preg_match(): Empty regular expression in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:02:12 America/Tegucigalpa] PHP Warning:  Undefined variable $validarTelefono in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:02:12 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #1 ($pattern) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:02:12 America/Tegucigalpa] PHP Warning:  preg_match(): Empty regular expression in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 48
+[28-Mar-2025 13:14:15 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 13:14:15 America/Tegucigalpa] Conexión exitosa
+[28-Mar-2025 13:14:18 America/Tegucigalpa] UserModel::post() -> PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`usuarios`, CONSTRAINT `fk_Usuarios_Rol` FOREIGN KEY (`Rol_Id_Rol`) REFERENCES `rol` (`Id_Rol_Rol`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:77
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(77): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(61): App\Models\UserModel::post()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\user.php(16): App\Controllers\UserController->post('user')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require('C:\\xampp\\htdocs...')
+#4 {main}

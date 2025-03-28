@@ -38,9 +38,9 @@ ENGINE = InnoDB;
 -- Table `biblioteca`.`Rol`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `biblioteca`.`Rol` (
-  `Id_Rol` INT NOT NULL,
+  `Id_Rol_Rol` INT NOT NULL,
   `Nombre_rol` VARCHAR(45) NULL,
-  PRIMARY KEY (`Id_Rol`))
+  PRIMARY KEY (`Id_Rol_Rol`))
 ENGINE = InnoDB;
 
 
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `biblioteca`.`Usuarios` (
   `Nombre` VARCHAR(50) NULL,
   `Telefono` VARCHAR(15) NULL,
   `Contrasena` VARCHAR(45) NULL,
-  `confirmarContrasena` VARCHAR(45) NULL,
+  `confirmaContrasena` VARCHAR(45) NULL,
   `IDToken`  VARCHAR(255) NULL,
   `fecha` DATETIME NULL,
   `Correo_electronico` VARCHAR(45) NULL,
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `biblioteca`.`Usuarios` (
   INDEX `fk_Usuarios_Rol_idx` (`Rol_Id_Rol` ASC),
   CONSTRAINT `fk_Usuarios_Rol`
     FOREIGN KEY (`Rol_Id_Rol`)
-    REFERENCES `biblioteca`.`Rol` (`Id_Rol`)
+    REFERENCES `biblioteca`.`Rol` (`Id_Rol_Rol`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
