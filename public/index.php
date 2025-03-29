@@ -6,7 +6,7 @@
 
     
     $url = explode('/',$_GET['route']);
-    $lista = ['auth', 'user']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login']; // lista de rutas permitidas
     $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
     errorlogs::activa_error_logs(); //activamos los errors    
     if(isset($_GET['route'])){

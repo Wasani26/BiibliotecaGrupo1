@@ -37,6 +37,7 @@ public function __construct($method,$route,$params,$data,$headers){
  final public function post($endpoint){
     //validación de method y endpoint
     if($this->method == 'post' && $endpoint == $this->route){
+        Security::validateTokenJwt($this->headers, Security::secretKey());
         //validacion que no vengan vacios
         if(empty($this->data['Nombre']) || empty($this->data['Telefono']) || empty($this->data['Correo_electronico']) || empty($this->data['Estado']) || empty($this->data['Rol_Id_Rol'])  ||
         empty($this->data['Contrasena']) || empty($this->data['confirmaContrasena'])){
@@ -66,13 +67,34 @@ public function __construct($method,$route,$params,$data,$headers){
 
  }
 
-public function delete($endpoint){
+     final public function getLogin($endpoint){
+        //validar method y endpoint(ruta al recurso)
+        if(this-> method == 'get' && $endpoint == $this-> route){
+           $email = strtolower($this->params[1]);
+           $pass = $this->params[2];
+           //algunas otras validaciones
+           if(empty($email) || empty($pass)){
+               echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));
+           } else if (!filtrer_var($email, FILTER_VALIDATE_EMAIL)){
+               echo json_encode(responseHTTP::status400('El correo debe llevar el formato correcto, proceda a corregir.'));
+           }else{
+              
+             UserModel::setCorreo_electronico($email);
+             UserModel::setContrasena($pass);
+             echo json_encode(UserModel::Login());
+        
+        }
+         exit;
+     }
+}
+
+/*final public function delete($endpoint){
    //vaidacion en este caso para metodo delete
    if ($this->method == 'delete' && $endpoint == $this->route){
     echo json_encode('delete');   
      exit;
      }
- }
+ }*/
  
 
 }

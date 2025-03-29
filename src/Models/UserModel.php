@@ -99,4 +99,44 @@ class UserModel extends connectionDB{
    }
  }
  
+
+ final public static function Login(){
+   try{
+    $con = self::getConnection();
+    $query = "CALL VerificarCorreoExistente(:Correo_electronico)";
+    $stmt = $con->execute([
+      ':Correo_electronico' => self::getCorreo_electronico()
+    ]);
+
+    if($stmt->rowCount() == 0){
+      return responseHTTP::status400('Usuario o Contraseña incorrectas!');
+    }else{
+      foreach ($stmt as $val) {
+        if(Security::validatePassword(self::getContrasena(), $val['Contrasena'])){
+
+          $payload =[
+             'IDToken' => $val['IDToken']
+          ];
+
+          //creación del token
+          $token = Security::createTokenJwt(Security::secretKey(),$payload);
+          //datos que le mostraremos al usuario
+          $data = [
+            'Nombre'  => $val['Nombre'],
+            'Rol_Id_Rol'  => $val['Rol_Id_Rol'],
+            'IDToken'  => $IDToken,
+          ];
+          //retorno de la data
+          return($data);
+
+        }else{
+          return responseHTTP::status400('Usuario o Contraseña incorrectas!');
+        }
+      }
+    }
+   } catch (\PDOException $e){
+     error_log("UserModel::Login -> ".$e);
+     die(json_encode(responseHTTP::status500()));
+   }
+ }
 }
