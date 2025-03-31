@@ -1,25 +1,25 @@
 <?php
-namespace App\Controllers;
 use App\Config\responseHTTP;
-require_once 'Models/BookModel';  
+use App\DB\connectionDB;  
+use App\Models\BookModel;
 
 //Controlador de libro//
 class BookController {  
     private $Libro;  
 
     public function __construct($db) {  //Construccion de libro//
-        $this->Libro = new Libro($db);  
+        $this->Libro = new BookModel ($db);  
     }  
 
     public function obtenerLibros() {  //Obtener un libro//
-        $$Libro = $this->Libro->obtenerLibros();  
+        $Libro = $this->Libro->obtenerLibros();  
         header('Content-Type: application/json');  
-        echo json_encode($$Id_Libro);  
+        echo json_encode($Libro);  
     }  
 
     public function crearLibro() {  //Creacion de libro//
         $dataDB = json_decode(file_get_contents("php://input"), true);  
-        $nuevoLibroId = $this->Libro->crearLibro($dataDB);  
+        $nuevoLibroId = $this->Libro->crearLibro($db);  
         header('Content-Type: application/json');  
 
         if ($nuevoLibroId) {  
