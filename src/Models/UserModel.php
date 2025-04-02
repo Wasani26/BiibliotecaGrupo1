@@ -104,7 +104,8 @@ class UserModel extends connectionDB{
    try{
     $con = self::getConnection();
     $query = "CALL VerificarCorreoExistente(:Correo_electronico)";
-    $stmt = $con->execute([
+    $stmt = $con->prepare($query);
+    $stmt->execute([
       ':Correo_electronico' => self::getCorreo_electronico()
     ]);
 
@@ -119,12 +120,12 @@ class UserModel extends connectionDB{
           ];
 
           //creación del token
-          $token = Security::createTokenJwt(Security::secretKey(),$payload);
+          /*$token = Security::createTokenJwt(Security::secretKey(),$payload);*/
           //datos que le mostraremos al usuario
           $data = [
             'Nombre'  => $val['Nombre'],
             'Rol_Id_Rol'  => $val['Rol_Id_Rol'],
-            'IDToken'  => $IDToken,
+            'IDToken'  =>  $val['IDToken'],
           ];
           //retorno de la data
           return($data);

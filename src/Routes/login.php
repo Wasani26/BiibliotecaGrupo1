@@ -8,9 +8,16 @@ $params = explode('/', $route); //explode para ruta etc
 $data = json_decode(file_get_contents("php://input"),true); //contiene la data
 $headers = getallheaders(); //captura todas las cabeceras
 
-$app = new UserController($method,$route,$params,$data,$headers); //instanciación clase user controlador
+function login($method,$route,$params,$data,$headers){
+    $params += [1 => filter_input(INPUT_GET,"Nombre"), 2 => filter_input(INPUT_GET,"Contrasena")];
+    $app = new UserController($method,$route,$params,$data,$headers); //instanciación clase user controlador
+    /*$app->getLogin("auth/{$params[1]}/{$params[2]}/"); //recibe los parametros email y contraseña*/
+    $app->getLogin('login');
+    exit;
+   
+    echo json_encode(responseHTTP::status404()); //error si no encuentra la ruta
+}
 
-//recibe los parametros email y contraseña
-$app->getLogin("auth/{$params[1]}/{$params[2]}/");
 
-echo json_encode(responseHTTP::status404()); //error si no encuentra la ruta
+
+

@@ -69,9 +69,10 @@ public function __construct($method,$route,$params,$data,$headers){
 
      final public function getLogin($endpoint){
         //validar method y endpoint(ruta al recurso)
-        if(this-> method == 'get' && $endpoint == $this-> route){
+        if($this-> method == 'get' && $endpoint == $this-> route){
            $email = strtolower($this->params[1]);
            $pass = $this->params[2];
+          /* var_dump($email, $pass, $this->params);*/ //para probar despúes
            //algunas otras validaciones
            if(empty($email) || empty($pass)){
                echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));
@@ -84,6 +85,9 @@ public function __construct($method,$route,$params,$data,$headers){
              echo json_encode(UserModel::Login());
         
         }
+        $response = UserModel::Login();
+        /*var_dump($response); // Ver la respuesta del modelo*/ //para probar después
+        echo json_encode($response);
          exit;
      }
 }
