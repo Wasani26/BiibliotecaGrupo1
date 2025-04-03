@@ -32,13 +32,14 @@ class Security {
     /*Metodo para Validar que las contraseñas coincidan o sean iguales*/
     final public static function validatePassword($pw,$pwh)
     {
+        /*error_log("Contraseña a verificar: " . $pw);
+        error_log("Hash a comparar: " . $pwh);*/
         if (password_verify($pw,$pwh)) {
             return  TRUE;
         } else {
             error_log('La contraseña es incorrecta');
            return  FALSE;
-        }   
-        
+        }
     }
 
     /*MEtodo para crear JWT*/

@@ -335,3 +335,56 @@ Stack trace:
 )
 
 [03-Apr-2025 00:05:49 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 00:45:54 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 00:45:55 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[03-Apr-2025 00:45:56 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 00:47:43 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 00:47:43 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[03-Apr-2025 00:47:43 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 00:47:52 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 00:47:52 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[03-Apr-2025 00:47:52 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 00:49:24 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 00:49:24 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => alejandraHN1@gmail.com
+    [Contrasena] => $2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT
+    [IDToken] => e679a513f413f3bc3706213a3714c8c4244655bea8929afce926ea94b724627b07996d20737aee8c0c3895ebe207f9a5c8d59471fc39c09e1c6ca316979424c7
+    [Nombre] => Mariax
+    [Rol_Id_Rol] => 3
+)
+
+[03-Apr-2025 00:49:24 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 01:21:35 America/Tegucigalpa] Contraseña recibida: 12345
+[03-Apr-2025 01:21:35 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 01:21:36 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 02:32:29 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 02:32:29 America/Tegucigalpa] Contraseña a verificar: 12345
+[03-Apr-2025 02:32:29 America/Tegucigalpa] Hash a comparar: $2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT
+[03-Apr-2025 02:32:30 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 02:42:09 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 02:42:09 America/Tegucigalpa] La contraseña es incorrecta

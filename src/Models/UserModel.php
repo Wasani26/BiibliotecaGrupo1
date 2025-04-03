@@ -100,47 +100,40 @@ class UserModel extends connectionDB{
  }
  
 
- final public static function Login(){
-   try{
-    $con = self::getConnection();
-    $query = "CALL Login(:Correo_electronico)";
-    $stmt = $con->prepare($query);
-    $stmt->execute([
-      ':Correo_electronico' => self::getCorreo_electronico()
-    ]);
+ final public static function Login(string $correo, string $password) {
+  /*error_log("Contraseña recibida: " . $password);*/ //prueba de contraseña que se compara
+  try{
+      $con = self::getConnection();
+      $query = "CALL Login(:Correo_electronico)";
+      $stmt = $con->prepare($query);
+      $stmt->execute([
+          ':Correo_electronico' => $correo // Usar el correo pasado como argumento
+      ]);
 
-
-    if($stmt->rowCount() == 0){
-      return responseHTTP::status400('Usuario o Contraseña incorrectas!');
-    }else{
-      //si hay datos
-      foreach ($stmt as $val) {
-        error_log(print_r($val, true));
-        if(Security::validatePassword(self::getContrasena(), $val['Contrasena'])){
-
-          $payload =[
-             'IDToken' => $val['IDToken']
-          ];
-
-          //creación del token
-          $token = Security::createTokenJwt(Security::secretKey(),$payload);
-          //datos que le mostraremos al usuario
-          $data = [
-            'Nombre'  => $val['Nombre'],
-            'Rol_Id_Rol'  => $val['Rol_Id_Rol'],
-            'token'  =>  $token,
-          ];
-          //retorno de la data
-          return($data);
-
-        }else{
+      if($stmt->rowCount() == 0){
           return responseHTTP::status400('Usuario o Contraseña incorrectas!');
-        }
+      }else{
+          foreach ($stmt as $val) {
+              /*error_log(print_r($val, true));*/  //para ver que usuario es traido de la BD en php-error.log
+              if(Security::validatePassword($password, $val['Contrasena'])){ // Usar la contraseña pasada como argumento
+                  $payload =[
+                      'IDToken' => $val['IDToken']
+                  ];
+                  $token = Security::createTokenJwt(Security::secretKey(),$payload);
+                  $data = [
+                      'Nombre'  => $val['Nombre'],
+                      'Rol_Id_Rol'  => $val['Rol_Id_Rol'],
+                      'token'   =>  $token,
+                  ];
+                  return($data);
+              }else{
+                  return responseHTTP::status400('Usuario o Contraseña incorrectas!');
+              }
+          }
       }
-    }
-   } catch (\PDOException $e){
-     error_log("UserModel::Login -> ".$e);
-     die(json_encode(responseHTTP::status500()));
-   }
- }
+  } catch (\PDOException $e){
+      error_log("UserModel::Login -> ".$e);
+      die(json_encode(responseHTTP::status500()));
+  }
+}
 }
