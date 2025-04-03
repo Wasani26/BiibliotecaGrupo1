@@ -103,7 +103,7 @@ class UserModel extends connectionDB{
  final public static function Login(){
    try{
     $con = self::getConnection();
-    $query = "CALL VerificarCorreoExistente(:Correo_electronico)";
+    $query = "CALL Login(:Correo_electronico)";
     $stmt = $con->prepare($query);
     $stmt->execute([
       ':Correo_electronico' => self::getCorreo_electronico()
@@ -115,6 +115,7 @@ class UserModel extends connectionDB{
     }else{
       //si hay datos
       foreach ($stmt as $val) {
+        error_log(print_r($val, true));
         if(Security::validatePassword(self::getContrasena(), $val['Contrasena'])){
 
           $payload =[
