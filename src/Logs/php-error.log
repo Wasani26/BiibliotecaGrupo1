@@ -228,3 +228,110 @@ Stack trace:
 [02-Apr-2025 18:55:57 America/Tegucigalpa] PHP Warning:  Undefined array key "Contrasena" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 118
 [02-Apr-2025 18:55:57 America/Tegucigalpa] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Config\Security.php on line 35
 [02-Apr-2025 18:55:57 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 19:23:03 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 19:23:03 America/Tegucigalpa] PHP Warning:  Undefined array key "Contrasena" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 118
+[02-Apr-2025 19:23:03 America/Tegucigalpa] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Config\Security.php on line 35
+[02-Apr-2025 19:23:03 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 19:40:35 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 19:40:35 America/Tegucigalpa] PHP Warning:  Undefined array key "Contrasena" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 118
+[02-Apr-2025 19:40:35 America/Tegucigalpa] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Config\Security.php on line 35
+[02-Apr-2025 19:40:35 America/Tegucigalpa] La contraseña esta incorrecta
+[02-Apr-2025 19:58:45 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 19:58:45 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => alejandraHN1@gmail.com
+)
+
+[02-Apr-2025 19:58:45 America/Tegucigalpa] PHP Warning:  Undefined array key "Contrasena" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 119
+[02-Apr-2025 19:58:45 America/Tegucigalpa] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Config\Security.php on line 35
+[02-Apr-2025 19:58:45 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 22:25:40 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 22:25:40 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => alejandraHN1@gmail.com
+    [Contrasena] => $2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT
+    [IDToken] => e679a513f413f3bc3706213a3714c8c4244655bea8929afce926ea94b724627b07996d20737aee8c0c3895ebe207f9a5c8d59471fc39c09e1c6ca316979424c7
+    [Nombre] => Mariax
+    [Rol_Id_Rol] => 3
+)
+
+[02-Apr-2025 22:25:40 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 22:54:17 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::get() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 14
+[02-Apr-2025 23:21:12 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 23:21:12 America/Tegucigalpa] PHP Warning:  Undefined variable $correo in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 109
+[02-Apr-2025 23:24:20 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 23:24:20 America/Tegucigalpa] PHP Warning:  Undefined variable $correo in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 109
+[02-Apr-2025 23:27:50 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 23:27:50 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[02-Apr-2025 23:27:50 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 23:30:22 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 23:30:22 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[02-Apr-2025 23:30:22 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 23:39:27 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::get() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 14
+[02-Apr-2025 23:40:14 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::get() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php:14
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 14
+[02-Apr-2025 23:41:36 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::get() in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php:15
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(27): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 15
+[02-Apr-2025 23:45:39 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 23:45:40 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[02-Apr-2025 23:45:40 America/Tegucigalpa] La contraseña es incorrecta
+[02-Apr-2025 23:50:26 America/Tegucigalpa] Conexión exitosa
+[02-Apr-2025 23:50:27 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[02-Apr-2025 23:50:28 America/Tegucigalpa] La contraseña es incorrecta
+[03-Apr-2025 00:05:48 America/Tegucigalpa] Conexión exitosa
+[03-Apr-2025 00:05:49 America/Tegucigalpa] Array
+(
+    [Correo_electronico] => awmartinez@unah.hn
+    [Contrasena] => $2y$10$AhWT6.m9y0pIJMqGpkYMyO.S/L8lDrQUqRM/ou
+    [IDToken] => 11d81a62afe6e6a42ce8a09a939d3d8023374be3dda546dfda015ca4106da3fdf737b38e8b4acf8f0758cbf30176d886010074891f8e85ac5715d444bbc1c1aa
+    [Nombre] => ElWasi
+    [Rol_Id_Rol] => 1
+)
+
+[03-Apr-2025 00:05:49 America/Tegucigalpa] La contraseña es incorrecta
