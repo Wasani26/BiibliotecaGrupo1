@@ -7,16 +7,16 @@ use App\Config\Security;
 
 
 //validacion de la contraseña
-/*$pass = Security::createPassword("hola");*/
-/*if(Security::validatePassword("hola",$pass)){
+/*$pass = Security::createPassword("hola");
+if(Security::validatePassword("hola",$pass)){
     echo json_encode("Contraseña correcta");
 }else{
     echo json_encode("Contraseña incorrecta");
-}*/
+}
 
 //jwt 
 //echo json_encode(Security::createTokenJwt(Security::secretKey(),["hola"]));
-/*echo(json_encode(Security::createTokenJwt(Security::secretKey(),["hola"])));*/
+echo(json_encode(Security::createTokenJwt(Security::secretKey(),["hola"])));*/
 
 
 //prueba la conexión BD

@@ -109,9 +109,11 @@ class UserModel extends connectionDB{
       ':Correo_electronico' => self::getCorreo_electronico()
     ]);
 
+
     if($stmt->rowCount() == 0){
       return responseHTTP::status400('Usuario o Contraseña incorrectas!');
     }else{
+      //si hay datos
       foreach ($stmt as $val) {
         if(Security::validatePassword(self::getContrasena(), $val['Contrasena'])){
 
@@ -120,12 +122,12 @@ class UserModel extends connectionDB{
           ];
 
           //creación del token
-          /*$token = Security::createTokenJwt(Security::secretKey(),$payload);*/
+          $token = Security::createTokenJwt(Security::secretKey(),$payload);
           //datos que le mostraremos al usuario
           $data = [
             'Nombre'  => $val['Nombre'],
             'Rol_Id_Rol'  => $val['Rol_Id_Rol'],
-            'IDToken'  =>  $val['IDToken'],
+            'token'  =>  $token,
           ];
           //retorno de la data
           return($data);
