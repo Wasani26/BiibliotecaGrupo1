@@ -60,7 +60,7 @@ class BookModel extends connectionDB{
             $data['Resumen'],   
             $data['Portada']  
         ]);  
-        return $this->db->lastInsertId(); // Devuelve el ID del nuevo libro  
+        return $this->db->lastInsertId(); // Devuelve el ID del nuevo libro  //
     }  
 
     public function obtenerLibros() {  
@@ -68,6 +68,23 @@ class BookModel extends connectionDB{
         $stmt = $this->db->query($query);  
         return $stmt->fetchAll(PDO::FETCH_ASSOC);  
     }  
+
+    //conexion//
+    final public static function getAll() {  
+        try {  
+            $con = self::getConnection(); 
+            $query = "CALL ConsultarLibros()"; 
+            $stmt = $con->prepare($query);  
+            $stmt->execute();  
+            $res = $stmt->fetchAll(\PDO::FETCH_ASSOC);  
+            return $res;  
+
+        } catch (\PDOException $e) {    
+            error_log("userModel::getAll ->".$e); //registra el error  
+            die (json_encode(responseHTTP::status500()));  
+        }  
+    }  
+
 
 }
 

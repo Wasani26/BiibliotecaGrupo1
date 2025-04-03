@@ -2,8 +2,9 @@
 use App\Config\responseHTTP;
 use App\DB\connectionDB;  
 use App\Models\BookModel;
+use BookModel as GlobalBookModel;
 
-//Controlador de libro//
+//Controlador de libro//|
 class BookController {  
     private $Libro;  
 
@@ -30,6 +31,16 @@ class BookController {
             echo json_encode(['mensaje' => 'Error al crear el libro']);  
         }  
     }  
+
+    //conexion//
+    final public function getAll ($endpoint){
+        //validar//
+        if ($this->method == 'get' && $endpoint == $this->route){
+            return BookModel::getAll();
+            exit;
+        }
+    }
+
 }  
 
 ?>
