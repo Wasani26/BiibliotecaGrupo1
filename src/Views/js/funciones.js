@@ -1,6 +1,4 @@
 
-
-
 $("#MiForm").submit(function (event) {
     event.preventDefault(); // Evitamos el envío tradicional del formulario.
 
@@ -11,19 +9,35 @@ $("#MiForm").submit(function (event) {
     // Validación del correo y contraseña
     const claveRegex = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/; // Al menos 8 caracteres, 1 letra y 1 número.
     
-    if (user === "" || clave === "") {
+    /*if (user === "" || clave === "") {
         Swal.fire({
             title: "Debes llenar todos los campos!",
-            icon: "warning"
+            icon: "warning",
+            confirmButtonText: "OK"
+        }).then((result) => {
+            if(result.isConfirmed) {
+                 //Me manda al login.php otra vez
+                 window.location.href = "http://localhost/BibliotecaGrupo1/public/login/login.php"
+            }
         });
         return false;
-    }
-    
+    }*/
+
+        if (user === "" || clave === "") {
+            Swal.fire({
+                title: "Debes llenar todos los campos!",
+                text: "Por favor proceda a llenarlos",
+                icon: "warning",
+            });
+            return false;
+        }
+
+
     if (!claveRegex.test(clave)) {
         Swal.fire({
             title: "Formato de contraseña inválido",
             text: "Debe contener al menos 8 caracteres, una letra y un número.",
-            icon: "warning"
+            icon: "warning",
         });
         return false;
     }

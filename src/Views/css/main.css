@@ -50,7 +50,7 @@
 }
 /*============ Estilos generales*/
 body, html{
-	background-color: #fff;
+	background-color: #FFF;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -622,4 +622,8 @@ body, html{
 	.no-paddin-left{
 		padding-left: 0;
 	}
+}
+
+.TienesCuenta{
+	text-align: center;
 }
