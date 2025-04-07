@@ -6,8 +6,24 @@
 
     
     $url = explode('/',$_GET['route']);
-    $lista = ['auth', 'user','login']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login', 'libros']; // lista de rutas permitidas
     $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
+
+    //caso libros//
+    switch ($_SERVER['REQUEST_METHOD']) {  
+        case 'GET':  
+            if ($url[0] === 'libros') {  
+                $controller->obtenerLibros();  
+            }  
+            break;  
+        case 'POST':  
+            if ($url[0] === 'libros') {  
+                $controller->crearLibro(json_decode(file_get_contents("php://input"), true));  
+            }  
+            // Otras rutas para POST  
+            break;
+        }  
+
     errorlogs::activa_error_logs(); //activamos los errors    
     if(isset($_GET['route'])){
         if(!in_array($url[0], $lista)){
@@ -32,5 +48,6 @@
     }else{
         echo "no existe la variable route";
     }
+ 
 
 ?>

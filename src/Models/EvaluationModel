@@ -1,6 +1,6 @@
 <?php
 
-class EvaluacionLibro{
+class EvaluacionLibros{
     private $db;
 
     public function __construct($dataDB){

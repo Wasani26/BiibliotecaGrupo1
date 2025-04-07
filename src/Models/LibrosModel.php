@@ -2,7 +2,7 @@
 use App\Config\responseHTTP;
 use App\DB\connectionDB;
 
-class BookModel extends connectionDB{
+class LibrosModel extends connectionDB{
     //Conexion de propiedas privadas//
     private $Titulo;
     private $autor;
