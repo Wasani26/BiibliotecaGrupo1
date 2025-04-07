@@ -37,7 +37,7 @@ public function __construct($method,$route,$params,$data,$headers){
  final public function post($endpoint){
     //validación de method y endpoint
     if($this->method == 'post' && $endpoint == $this->route){
-        Security::validateTokenJwt($this->headers, Security::secretKey());
+        /*Security::validateTokenJwt($this->headers, Security::secretKey());*/
         //validacion que no vengan vacios
         if(empty($this->data['Nombre']) || empty($this->data['Telefono']) || empty($this->data['Correo_electronico']) || empty($this->data['Estado']) || empty($this->data['Rol_Id_Rol'])  ||
         empty($this->data['Contrasena']) || empty($this->data['confirmaContrasena'])){

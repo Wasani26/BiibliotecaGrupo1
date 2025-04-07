@@ -4,16 +4,30 @@
 	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="">
+	
+
 </head>
 <body>
+    
+<script>
+    Swal.fire({
+        title: 'Prueba exitosa',
+        text: 'SweetAlert está funcionando correctamente.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+</script>
+
+
+
 	<div class="full-box login-container cover">
-		<form action="home.html" method="" autocomplete="off" class="logInForm">
+		<form action="" method="POST" id="MiForm" name="MiForm" class="logInForm">
 			<p class="text-center text-muted"><img src="./assets/img/Logo.png" witdh="200" height="200"></p>
 			<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
 			<div class="form-group label-floating">
-			  <label class="control-label" for="UserName">Correo</label>
-			  <input class="form-control" id="UserName" type="text">
+			  <label class="control-label" for="MiCorreo">Correo</label>
+			  <input class="form-control" id="MiCorreo" type="text">
 			  <p class="help-block">Escribe tu correo electronico</p>
 			</div>
 			<div class="form-group label-floating">
@@ -26,8 +40,8 @@
 			</div>
 		</form>
 	</div>
-	<!--====== Scripts -->
-	<script src="./js/jquery-3.1.1.min.js"></script>
+	<!--====== Scripts
+	/*<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/material.min.js"></script>
 	<script src="./js/ripples.min.js"></script>
@@ -37,6 +51,9 @@
 	
 	<script>
 		$.material.init();
-	</script>
+	</script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./BibliotecaGrupo1/src/Views/js/funciones.js"></script>
 </body>
 </html>
