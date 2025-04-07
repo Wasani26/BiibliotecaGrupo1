@@ -53,7 +53,7 @@ $("#MiForm").submit(function (event) {
                 text: "DATA: " + resp,
                 icon: "success"
             });
-            window.location.href = "ruta_deseada.html"; // Redirige al usuario.
+            window.location.href = ""; 
         },
         error: function (jqXHR, textStatus, errorThrown) {
             Swal.fire({

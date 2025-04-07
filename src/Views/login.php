@@ -40,7 +40,7 @@
 			</div>
           <!--Si no tienes cuenta-->
 			<div class="">
-                      <p class="" >  No tienes Cuenta? <a href="registroUser.html">Crea una aqui</a></p>
+                      <p class="" >No tienes Cuenta? <a href="/BibliotecaGrupo1/src/Views/registroUser.php" action="">Crea una aqui</a></p>
                     </div>
 
 		</form>
