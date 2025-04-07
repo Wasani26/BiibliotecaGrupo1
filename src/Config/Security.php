@@ -50,7 +50,7 @@ class Security {
     {
         $payload = array ( //Cuerpo del JWT
             "iat" => time(),  //clave que almacena el tiempo en el que creamos el JWT
-            "exp" => time() + 60, //clave que almacena el tiempo actual en segundos que expira el JWT
+            "exp" => time() + (60*60*6), //clave que almacena el tiempo actual en segundos que expira el JWT
             //si solo colocamos 10 entonces expirara en 10 segundos 60 seg*60 min*1 hr
             "data" => $data //clave que almacena la data encriptada
         );
@@ -72,7 +72,7 @@ class Security {
         //postman Autorization
         if (!isset($token['Authorization'])) {
             //echo "El token de acceso en requerido";
-            die(json_encode(ResponseHttp::status400()));            
+            die(json_encode(ResponseHttp::status400("Para proceder el token de acceso es requerido!")));            
             exit;
         }
         try {
@@ -90,7 +90,7 @@ class Security {
             exit;
         } catch (\Exception $e) {
             error_log('Token invalido o expiro'. $e);
-            die(json_encode(ResponseHttp::status401('Token invalido o ha expirado'))); //funcion que manda un mj y termina ejecucion 
+            die(json_encode(ResponseHTTP::status401('Token invalido o ha expirado'))); //funcion que manda un mj y termina ejecucion 
         }
     }
 
