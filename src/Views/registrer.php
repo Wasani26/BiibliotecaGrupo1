@@ -43,11 +43,19 @@
 
             <!-- Botón Crear Usuario -->
             <div class="form-group text-center">
-                <input type="submit" value="Crear Usuario" class="btn btn-primary">
+                <input type="submit" value="Crear Usuario" class="btn btn-info" style="color: #FFF;">
             </div>
 
-            
-
+             <!--Si no tienes cuenta-->
+			<div class="">
+                      <p class="" >Ya tienes Cuenta? <a href="/BibliotecaGrupo1/public/login/login.php" action="">Ingresa tu Cuenta aqui</a></p>
+                    </div>
+                    <br>
+        
         </form>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/funciones.js"></script>
 </body>

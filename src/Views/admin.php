@@ -25,17 +25,17 @@
 				</figure>
 				<ul class="full-box list-unstyled text-center">
 					<li>
-						<a href="my-data.html" title="Mis datos">
+						<a href="" title="Mis Perfil">
 							<i class="zmdi zmdi-account-circle"></i>
 						</a>
 					</li>
 					<li>
-						<a href="my-account.html" title="Mi cuenta">
+						<a href="" title="Mi cuenta">
 							<i class="zmdi zmdi-settings"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#!" title="Salir del sistema" class="btn-exit-system">
+						<a href="#!" title="Cerrar Sesión" class="btn-exit-system">
 							<i class="zmdi zmdi-power"></i>
 						</a>
 					</li>
@@ -94,16 +94,16 @@
 					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
 				</li>
 				<li>
-					<a href="search.html" class="btn-search">
+					<a href="" class="btn-search">
 						<i class="zmdi zmdi-search"></i>
 					</a>
 				</li>
 			</ul>
 		</nav>
 		
-
+    
         <!--Ya este es el contenido de la página que tocará dinamizar-->
-		<!-- Content page -->
+		<!-- Content page 
 		<div class="container-fluid">
 			<div class="page-header">
 			  <h1 class="text-titles">System <small>Tiles</small></h1>
@@ -209,6 +209,7 @@
 
 		</div>
 	</section>
+    -->
 
 	<!--====== Scripts -->
 	<!--<script src="./js/jquery-3.1.1.min.js"></script>

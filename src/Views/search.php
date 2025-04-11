@@ -24,7 +24,7 @@
 				</figure>
 				<ul class="full-box list-unstyled text-center">
 					<li>
-						<a href="" title="Mis datos">
+						<a href="" title="Mi Perfil">
 							<i class="zmdi zmdi-account-circle"></i>
 						</a>
 					</li>
@@ -34,7 +34,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#!" title="Salir del sistema" class="btn-exit-system">
+						<a href="#!" title="Cerrar Sesión" class="btn-exit-system">
 							<i class="zmdi zmdi-power"></i>
 						</a>
 					</li>
@@ -111,6 +111,7 @@
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptas reiciendis tempora voluptatum eius porro ipsa quae voluptates officiis sapiente sunt dolorem, velit quos a qui nobis sed, dignissimos possimus!</p>
 		</div>
 
+		<!--
 		<div class="container-fluid">
 			<form class="well">
 				<div class="row">
@@ -198,6 +199,7 @@
 		
 		
 	</section>
+     -->
 
 	<!--====== Scripts -->
 	<!--<script src="./js/jquery-3.1.1.min.js"></script>

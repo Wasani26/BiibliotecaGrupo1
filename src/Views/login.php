@@ -21,7 +21,7 @@
 			</div>
 			<div class="form-group label-floating">
 			  <label class="control-label" for="UserPass">Contraseña</label>
-			  <input class="form-control" id="UserPass" type="text">
+			  <input class="form-control" id="UserPass" type="password">
 			  <p class="help-block">Escribe tú contraseña</p>
 			</div>
 			<div class="form-group text-center">
@@ -29,7 +29,7 @@
 			</div>
           <!--Si no tienes cuenta-->
 			<div class="">
-                      <p class="" >No tienes Cuenta? <a href="/BibliotecaGrupo1/src/Views/registroUser.php" action="">Crea una aqui</a></p>
+                      <p class="" >No tienes Cuenta? <a href="/BibliotecaGrupo1/public/registrer/" action="">Crea una aqui</a></p>
                     </div>
 
 		</form>

@@ -2,9 +2,8 @@
     use App\Config\errorlogs;
     use App\Config\responseHTTP;
     use App\Config\Security;
-    require dirname(__DIR__) . '/vendor/autoload.php';
+    require dirname(__DIR__) . '\vendor\autoload.php';
 
-    
     $url = explode('/',$_GET['route']);
 
 /*
@@ -23,10 +22,10 @@
             break;
         }  
 */
-    $lista = ['auth', 'user','login','libros']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
+    $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
-    $file = "";
-
+    $file = '';
     if($caso != ""){
         $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
     }else{
