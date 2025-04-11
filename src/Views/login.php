@@ -10,17 +10,6 @@
 </head>
 <body>
     
-<!--<script>
-    Swal.fire({
-        title: 'Prueba exitosa',
-        text: 'SweetAlert está funcionando correctamente.',
-        icon: 'success',
-        confirmButtonText: 'OK'
-    });
-</script>-->
-
-
-
 	<div class="full-box login-container cover">
 		<form action="" method="POST" id="MiForm" name="MiForm" class="logInForm">
 			<p class="text-center text-muted"><img src="/BibliotecaGrupo1/src/Views/assets/img/Logo.png" witdh="200" height="200"></p>
