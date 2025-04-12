@@ -2,14 +2,17 @@
     use App\Config\errorlogs;
     use App\Config\responseHTTP;
     use App\Config\Security;
-    require dirname(__DIR__) . '/vendor/autoload.php';
+    require dirname(__DIR__) . '\vendor\autoload.php';
 
-    
     $url = explode('/',$_GET['route']);
 //<<<<<<< HEAD//
+
     $lista = ['auth', 'user','login', 'libros']; // lista de rutas permitidas
     $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
 
+
+
+//>>>>>>> 987ddd0d8f3ee94807afb0c7efe8ce2cecc55942//
     //caso libros//
     switch ($_SERVER['REQUEST_METHOD']) {  
         case 'GET':  
@@ -24,21 +27,27 @@
             // Otras rutas para POST  
             break;
         }  
+//<<<<<<< HEAD//
 
-/*=======*/
     $lista = ['auth', 'user','login']; // lista de rutas permitidas
-    $caso  = filter_input(INPUT_GET,"caso");
-    $file = "";
+//=======//
 
+    $lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
+    $caso = '';
+//>>>>>>> 987ddd0d8f3ee94807afb0c7efe8ce2cecc55942//
+    $caso  = filter_input(INPUT_GET,"caso");
+    $file = '';
     if($caso != ""){
         $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
     }else{
         $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
     }
 
+//<<<<<<< HEAD//
     
   
-//>>>>>>> 31817bc062cc9a0cd74be9a5895097310bd32cc5//
+/*
+>>>>>>> 987ddd0d8f3ee94807afb0c7efe8ce2cecc55942*/
     errorlogs::activa_error_logs(); //activamos los errors    
     if(isset($_GET['route'])){
         if(!in_array($url[0], $lista)){

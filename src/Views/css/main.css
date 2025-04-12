@@ -50,7 +50,7 @@
 }
 /*============ Estilos generales*/
 body, html{
-	background-color: #fff;
+	background-color: #FFF;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -60,6 +60,13 @@ body, html{
 	font-family: 'RobotoCondensed';
 	overflow: hidden;
 }
+body {
+    background: url('/BibliotecaGrupo1/src/Views/assets/img/login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'RobotoCondensed'; /* Opcional para un estilo más limpio */
+    color: #fff; /* Esto asegura que el texto sea visible sobre el fondo */
+}
+
 .full-box{
 	margin: 0;
 	padding: 0;
@@ -623,3 +630,4 @@ body, html{
 		padding-left: 0;
 	}
 }
+
