@@ -101,4 +101,24 @@ class Security {
         return $jwt_decoded_array['data'];
         exit;
     }
+
+    // Validacion de JWT //
+    final public static function validaTokenJwt (string $key){
+        if (!isset(getallheaders()['Authorization'])){ // token de acceso requerido //
+            die (json_decode(ResponseHttp::status400()));
+            exit;
+        }
+        try{
+            $jwt = explode (" ", getallheaders()['Authorization']);
+            $data = JWT::decode($jwt[1], $key, array('HS256'));
+            // Array asociativo para retornar //
+            self::$jwt_data = $data;
+            return $data;
+            exit;
+        } catch (Exception $e){
+            error_log('Token invalido o expiro'. $e);
+            die (json_decode(responseHttp::status401('Token invalido o ha expirado')));
+        }
+    }
+
 }

@@ -3,6 +3,8 @@
 //mas adelante lo configuraremos para que el autoload de composer pueda cargarlo de forma dinamica
 namespace App\Config; //este sera nuestro espacio de nombres
 
+use Exception;
+
 class responseHTTP{
     //definimos una variable llamada mensaje que sera un array asociativo para nuestros mensajes
     public static $mensaje = array(
@@ -58,4 +60,6 @@ class responseHTTP{
         self::$mensaje['message'] = $res; //la variable res es el mensaje
         return self::$mensaje;
     }
+
+
 }

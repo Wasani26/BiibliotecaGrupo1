@@ -3,17 +3,17 @@
 namespace App\Controllers;
 use App\Config\responseHTTP;
 use App\DB\connectionDB;
-use App\Config\JwtHandler;  
+use App\Config\TokenJwt;  
 use App\Models\LibrosModel;
 
 //Controlador de libro//
 class LibrosController {  
     private $Libro; 
-    private $jwtHandler; 
+    private $tokenjwt; 
 
     public function __construct($db) {  //Construccion de libro//
         $this->Libro = new LibrosModel ($db); 
-        $this->jwtHandler=new JwtHandler ();
+        $this->tokenjwt=new TokenJwt ();
     }  
 
     public function obtenerLibros() {  //Obtener un libro//
@@ -23,9 +23,9 @@ class LibrosController {
     }  
 
     public function crearLibro() {
-        $token = $this->jwtHandler->getHeaders();
-        $token = $this->jwtHandler->extractToken($token);
-        $decoded = $this->jwtHandler->verifyToken($token);
+        $token = $this->tokenjwt->getHeaders();
+        $token = $this->tokenjwt->extractTokenJwt($token);
+        $decoded = $this->tokenjwt->verifyTokenJwt($token);
 
         if ($decoded) {
             // Token válido a usuario autenticado //
