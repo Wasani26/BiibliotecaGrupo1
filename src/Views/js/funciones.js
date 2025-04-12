@@ -72,18 +72,19 @@ $("#FormCrearUsuario").submit(function (event) {
     event.preventDefault(); // Evitamos el envío tradicional del formulario.
 
     // Capturar valores de los campos
-    /*let nombre = $("#Nombre").val();
+    let nombre = $("#Nombre").val();
     let correo = $("#Correo").val();
     let contraseña = $("#Contraseña").val();
     let confirmarContraseña = $("#ConfirmarContraseña").val();
-    let telefono = $("#Telefono").val();*/
+    let telefono = $("#Telefono").val();
+    var caso = "registrer";
 
-    let datos = {
+    /*let datos = {
         Nombre: $("#Nombre").val(),
         Correo: $("#Correo").val(),
         Contraseña: $("#Contraseña").val(),
         Telefono: $("#Telefono").val()
-    };
+    };*/
 
     // Regex para validaciones
     const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Formato de correo
@@ -129,16 +130,10 @@ $("#FormCrearUsuario").submit(function (event) {
         return false;
     }
 
-    // Si todas las validaciones pasan, enviar datos (puedes añadir tu lógica AJAX aquí)
-    Swal.fire({
-        title: "Buen trabajo!",
-        text: "Formulario validado exitosamente.",
-        icon: "success"
-    });
 
     // Aquí podrías agregar tu petición AJAX
     $.ajax({
-        url: "http://localhost/BibliotecaGrupo1/public/user", // URL del endpoint
+        url: "localhost/BibliotecaGrupo1/public/registrer/",
         type: "POST",
         data: JSON.stringify(datos),
         contentType: "application/json",

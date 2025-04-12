@@ -19,10 +19,9 @@ $app->delete('user'); //llamada de delete
 $caso = filter_input(INPUT_GET,"caso");
 switch($caso){
     case 'registrer':
-        post($method,$route,$params,$data,$headers);
         $app = new UserController($method, $route, $params, $data, $headers);
-
-        break;
+        $app->post('user');
+        exit;
 }
 
 

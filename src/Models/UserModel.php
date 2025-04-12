@@ -66,9 +66,18 @@ class UserModel extends connectionDB{
      self::setIDToken(hash('sha512', self::getCorreo_electronico()));
      self::setfecha(date("Y-m-d H:i:s")); //fecha de creación 
    }
+  
 
    //hash
    //$hashedPassword = Security::createPassword(self::getContrasena());
+
+  //si falla el controlador siempre asigna estos valores predefinidos 
+   if (empty(self::getEstado())) {
+    self::setEstado('Activo'); // Valor predeterminado para Estado
+   }
+   if (empty(self::getRol_Id_Rol())) {
+    self::setRol_Id_Rol(3); // Valor predeterminado para Rol_Id_Rol
+   }
 
    try {
     $con = self::getConnection(); //obtener conexión

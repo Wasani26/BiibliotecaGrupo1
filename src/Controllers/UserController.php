@@ -42,7 +42,17 @@ public function __construct($method,$route,$params,$data,$headers){
         if(empty($this->data['Nombre']) || empty($this->data['Telefono']) || empty($this->data['Correo_electronico']) || empty($this->data['Estado']) || empty($this->data['Rol_Id_Rol'])  ||
         empty($this->data['Contrasena']) || empty($this->data['confirmaContrasena'])){
             echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos'));
+            
+
             //validacion de campos de texto mediante preg_match
+        }if (empty($this->data['Estado'])) {
+            $this->data['Estado'] = 'Activo'; // Valor predeterminado
+        }
+
+        // Validar que el rol no venga vacío, si no se envía, asignar valor por defecto
+        if (empty($this->data['Rol_Id_Rol'])) {
+            $this->data['Rol_Id_Rol'] = 3; // Valor predeterminado para Rol_Id_Rol
+            
         }else if (!preg_match(self::$validar_texto, $this->data['Nombre'])){
             echo json_encode(responseHTTP::status400('Este campo solo permite texto'));
             //lo mismo evaluamos para numeros
@@ -52,12 +62,12 @@ public function __construct($method,$route,$params,$data,$headers){
         else if (!filter_var($this->data['Correo_electronico'], FILTER_VALIDATE_EMAIL)){
         echo json_encode(responseHTTP::status400('El formato de correo es incorrecto'));
           //validar Estado
-        }else if (!preg_match(self::$validar_texto, $this->data['Estado'])){
+        }/*else if (!preg_match(self::$validar_texto, $this->data['Estado'])){
             echo json_encode(responseHTTP::status400('Este campo solo permite texto'));
             //validar rol
         }else if (!preg_match(self::$validar_rol,$this->data['Rol_Id_Rol'])){
           echo json_encode(responseHTTP::status400('El rol puesto es invalido'));
-        }else{
+        }*/else{
         new UserModel($this->data);
          echo json_encode(UserModel::post());
         }      
