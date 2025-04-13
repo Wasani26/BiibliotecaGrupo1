@@ -79,10 +79,17 @@ class ComposerStaticInite875ae8441d070d7dda5f4b47a2117aa
 
     public static $classMap = array (
         'App\\Config\\Security' => __DIR__ . '/../..' . '/src/Config/Security.php',
+        'App\\Config\\TokenJwt' => __DIR__ . '/../..' . '/src/Config/TokenJwt.php',
         'App\\Config\\errorlogs' => __DIR__ . '/../..' . '/src/Config/errorlogs.php',
         'App\\Config\\responseHTTP' => __DIR__ . '/../..' . '/src/Config/responseHTTP.php',
+        'App\\Controllers\\LibrosController' => __DIR__ . '/../..' . '/src/Controllers/LibrosController.php',
+        'App\\Controllers\\PrestamoDevolucionController' => __DIR__ . '/../..' . '/src/Controllers/PrestamoDevolucionController.php',
         'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/src/Controllers/UserController.php',
         'App\\DB\\connectionDB' => __DIR__ . '/../..' . '/src/DB/connectionDB.php',
+        'App\\DB\\sql' => __DIR__ . '/../..' . '/src/DB/sql.php',
+        'App\\Models\\LibrosModel' => __DIR__ . '/../..' . '/src/Models/LibrosModel.php',
+        'App\\Models\\PrestamoDevolucionModel' => __DIR__ . '/../..' . '/src/Models/PrestamoDevolucionModel.php',
+        'App\\Models\\UserModel' => __DIR__ . '/../..' . '/src/Models/UserModel.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Dotenv\\Dotenv' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Dotenv.php',

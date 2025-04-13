@@ -1,9 +1,7 @@
 <?php
 namespace App\Controllers;
-namespace App\Config\responseHTTP;
-namespace App\Controllers;
-use App\Model\CatalogoController;
-
+use App\Config\responseHTTP;
+/*use App\Model\CatalogoController;*/
 use App\Model\CatalogoModel;
 
 class CatalogController {

@@ -400,3 +400,53 @@ Stack trace:
 [06-Apr-2025 19:21:48 America/Tegucigalpa] La contraseña es incorrecta
 [06-Apr-2025 19:21:53 America/Tegucigalpa] Conexión exitosa
 [06-Apr-2025 19:21:53 America/Tegucigalpa] La contraseña es incorrecta
+[12-Apr-2025 16:42:55 America/Tegucigalpa] Conexión exitosa
+[12-Apr-2025 16:42:56 America/Tegucigalpa] Conexión exitosa
+[12-Apr-2025 16:48:07 America/Tegucigalpa] Conexión exitosa
+[12-Apr-2025 16:48:09 America/Tegucigalpa] La contraseña es incorrecta
+[12-Apr-2025 16:57:29 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Config\UserController" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php:44
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(57): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 44
+[12-Apr-2025 18:06:41 America/Tegucigalpa] Entrando al controlador: método = get, ruta = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 18:12:03 America/Tegucigalpa] Método recibido: get
+[12-Apr-2025 19:15:45 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Models\LibrosModel" not found in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php:15
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(14): App\Controllers\LibrosController->__construct(NULL, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php on line 15
+[12-Apr-2025 19:39:12 America/Tegucigalpa] PHP Warning:  Undefined variable $Titulo in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $autor in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $ISBN in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $Categoria in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $Disponibilidad in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $Ubicacion_biblioteca in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $Resumen in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Warning:  Undefined variable $Portada in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:13 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\LibrosModel::__construct(), 1 passed in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php on line 15 and exactly 8 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php:18
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php(15): App\Models\LibrosModel->__construct(Object(App\Models\LibrosModel))
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(18): App\Controllers\LibrosController->__construct(Object(App\Models\LibrosModel), Object(App\Config\TokenJwt))
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 18
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $Titulo in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $autor in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $ISBN in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $Categoria in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $Disponibilidad in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $Ubicacion_biblioteca in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $Resumen in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Warning:  Undefined variable $Portada in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:39:15 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\LibrosModel::__construct(), 1 passed in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php on line 15 and exactly 8 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php:18
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php(15): App\Models\LibrosModel->__construct(Object(App\Models\LibrosModel))
+#1 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(18): App\Controllers\LibrosController->__construct(Object(App\Models\LibrosModel), Object(App\Config\TokenJwt))
+#2 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 18
+[12-Apr-2025 19:46:37 America/Tegucigalpa] PHP Warning:  Undefined variable $db in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 19:46:37 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\LibrosModel::__construct(), 1 passed in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16 and exactly 8 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(16): App\Models\LibrosModel->__construct(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 17

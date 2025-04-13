@@ -125,6 +125,7 @@ class UserModel extends connectionDB{
           foreach ($stmt as $val) {
               /*error_log(print_r($val, true));*/  //para ver que usuario es traido de la BD en php-error.log
               if(Security::validatePassword($password, $val['Contrasena'])){ // Usar la contraseña pasada como argumento
+                error_log("La contraseña no coincide para el usuario con correo: $correo");
                   $payload =[
                       'IDToken' => $val['IDToken']
                   ];
@@ -142,6 +143,7 @@ class UserModel extends connectionDB{
       }
   } catch (\PDOException $e){
       error_log("UserModel::Login -> ".$e);
+
       die(json_encode(responseHTTP::status500()));
   }
 }

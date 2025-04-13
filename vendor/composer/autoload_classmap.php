@@ -7,10 +7,17 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Config\\Security' => $baseDir . '/src/Config/Security.php',
+    'App\\Config\\TokenJwt' => $baseDir . '/src/Config/TokenJwt.php',
     'App\\Config\\errorlogs' => $baseDir . '/src/Config/errorlogs.php',
     'App\\Config\\responseHTTP' => $baseDir . '/src/Config/responseHTTP.php',
+    'App\\Controllers\\LibrosController' => $baseDir . '/src/Controllers/LibrosController.php',
+    'App\\Controllers\\PrestamoDevolucionController' => $baseDir . '/src/Controllers/PrestamoDevolucionController.php',
     'App\\Controllers\\UserController' => $baseDir . '/src/Controllers/UserController.php',
     'App\\DB\\connectionDB' => $baseDir . '/src/DB/connectionDB.php',
+    'App\\DB\\sql' => $baseDir . '/src/DB/sql.php',
+    'App\\Models\\LibrosModel' => $baseDir . '/src/Models/LibrosModel.php',
+    'App\\Models\\PrestamoDevolucionModel' => $baseDir . '/src/Models/PrestamoDevolucionModel.php',
+    'App\\Models\\UserModel' => $baseDir . '/src/Models/UserModel.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Dotenv\\Dotenv' => $vendorDir . '/vlucas/phpdotenv/src/Dotenv.php',

@@ -78,6 +78,17 @@ public function __construct($method,$route,$params,$data,$headers){
  }
      
      final public function getLogin($endpoint){
+        /*error_log("Entrando al controlador: método = $this->method, ruta = $this->route");*/
+        /*error_log("Método recibido: $this->method");*/
+        /*header("Content-Type: application/json; charset=UTF-8");*/
+        /*header("Content-Type: application/json; charset=UTF-8");
+        echo json_encode(["status" => "Hello from PHP!"]);
+        exit;
+        echo json_encode(["status" => "testing response"]);*/
+        if (ob_get_length()) ob_end_clean();
+        header("Content-Type: application/json; charset=UTF-8");
+
+
         //validar method y endpoint(ruta al recurso)
         if($this-> method == 'get' && $endpoint == $this-> route){
            $email = strtolower($this->params[1]);
@@ -88,13 +99,14 @@ public function __construct($method,$route,$params,$data,$headers){
            } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
                echo json_encode(responseHTTP::status400('El correo debe llevar el formato correcto, proceda a corregir.'));
            }else{
-              
+           
              UserModel::setCorreo_electronico($email);
              UserModel::setContrasena($pass);
              echo json_encode(UserModel::Login());
-        
+
+             
+          
         }
-        
          exit;
      }
 }
@@ -109,3 +121,5 @@ public function __construct($method,$route,$params,$data,$headers){
  
 
 }
+
+?>
