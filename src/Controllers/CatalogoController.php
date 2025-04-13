@@ -41,6 +41,31 @@ class CatalogController {
     }
 }
 
+// ruta de catalogo //
+$url = explode('/', $_GET['route'] ?? '');
+    $route = $url[0] ?? '';
 
+    $listaRutasGenerales = ['auth', 'user', 'login', 'libros', 'catalogo', 'registrer']; // Asegúrate de incluir 'catalogo'
+
+    errorlogs::activa_error_logs();
+
+    if (isset($_GET['route'])) {
+        if (!in_array($route, $listaRutasGenerales)) {
+            echo json_encode(responseHTTP::status200('La ruta no existe!')); // Considera usar 404
+            exit;
+        }
+
+        $file = dirname(__DIR__) . '/src/Routes/' . $route . '.php';
+        if (file_exists($file) && is_readable($file)) {
+            require $file;
+            exit;
+        } else {
+            echo json_encode(responseHTTP::status200('El archivo de ruta no existe o no es legible!')); // Considera usar 404
+            exit;
+        }
+
+    } else {
+        echo "no existe la variable route";
+    }
 
 ?>

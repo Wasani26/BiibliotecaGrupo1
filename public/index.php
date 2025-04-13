@@ -11,19 +11,11 @@
 
     
     $url = explode('/',$_GET['route']);
-   
 
-$lista = ['auth', 'user','login', 'libros','Prestamos','Devoluciones','Notificaciones','']; // lista de rutas permitidas
-    $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
-
-    $lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
-    $caso = '';
-
-
-    $controller = new LibrosController(new LibrosModel($db), new TokenJwt());
+    
     
     //caso libros//
-    if (isset($controller) && is_object($controller)) {
+   /* if (isset($controller) && is_object($controller)) {
     switch ($_SERVER['REQUEST_METHOD']) {  
         case 'GET':  
             if ($url[0] === 'libros') {  
@@ -39,12 +31,11 @@ $lista = ['auth', 'user','login', 'libros','Prestamos','Devoluciones','Notificac
         }  
     }else{
         echo "Error: El controlador no está inicializado.";
-    }
+    }*/
 
     
-    $lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','libros','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
     $caso = '';
-
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
     if($caso != ""){

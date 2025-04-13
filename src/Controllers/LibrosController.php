@@ -49,6 +49,18 @@ class LibrosController {
         }
     }
 
+    public function eliminarLibro($id) {
+        $eliminado = $this->Libro->eliminarLibro($id);
+        header('Content-Type: application/json');
+
+        if ($eliminado) {
+            echo json_encode(['mensaje' => 'Libro eliminado con éxito']);
+        } else {
+            http_response_code(404);
+            echo json_encode(['mensaje' => 'Libro no encontrado o error al eliminar']);
+        }
+    }
+
     //conexion//
     final public function getAll ($endpoint){
         //validar//
@@ -57,7 +69,33 @@ class LibrosController {
             exit;
         }
     }
+    
+    // Ruta en libros //
+    $url = explode('/', $_GET['route'] ?? '');
+    $route = $url[0] ?? '';
 
-}  
+    $lista = ['auth', 'user', 'login', 'libros', 'registrer'];
 
+    errorlogs::activa_error_logs();
+
+    if (isset($_GET['route'])) {
+        if (!in_array($route, $listaRutasGenerales)) {
+            echo json_encode(responseHTTP::status200('La ruta no existe!'));
+            exit;
+        }
+
+    $file = dirname(__DIR__) . '/src/Routes/' . $route . '.php';
+    if (file_exists($file) && is_readable($file)) {
+        require $file;
+        exit;
+    } else {
+        echo json_encode(responseHTTP::status200('El archivo de ruta no existe o no es legible!'));
+        exit;
+    }
+   } else {
+    echo "no existe la variable route";
+   }
+
+
+}
 ?>
