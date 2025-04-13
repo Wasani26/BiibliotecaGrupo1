@@ -1,24 +1,23 @@
 <?php
 namespace App\Controllers;
 use App\Config\responseHTTP;
-/*use App\Model\CatalogoController;*/
-use App\Model\CatalogoModel;
+use App\Models\CatalogoModel;
 
 class CatalogController {
-    private $catalogoModel;
+    private $catalogo;
 
     public function __construct($db) {
-        $this->catalogoModel = new CatalogoModel($db);
+        $this->catalogo = new CatalogoModel($db);
     }
 
     public function listarLibros() {
-        $libros = $this->catalogoModel->obtenerTodosLosLibros();
+        $libros = $this->catalogo->obtenerTodosLosLibros();
         header('Content-Type: application/json');
         echo json_encode($libros);
     }
 
     public function obtenerLibroPorId($id) {
-        $libro = $this->catalogoModel->obtenerLibroPorId($id);
+        $libro = $this->catalogo->obtenerLibroPorId($id);
         header('Content-Type: application/json');
         if ($libro) {
             echo json_encode($libro);
@@ -31,7 +30,7 @@ class CatalogController {
     public function buscarLibros() {
         $termino = isset($_GET['q']) ? $_GET['q'] : '';
         if (!empty($termino)) {
-            $resultados = $this->catalogoModel->buscarLibros($termino);
+            $resultados = $this->catalogo->buscarLibros($termino);
             header('Content-Type: application/json');
             echo json_encode($resultados);
         } else {
