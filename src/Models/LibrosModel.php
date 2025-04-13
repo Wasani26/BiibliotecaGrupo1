@@ -14,7 +14,7 @@ class LibrosModel extends connectionDB{
     private $Resumen;
     private $Portada;
 
-    public function __construct($Titulo, $autor, $ISBN, $Categoria, $Disponibilidad, $Ubicacion_biblioteca, $Resumen, $Portada){
+    public function __construct($db){
         $this->Titulo=$Titulo;
         $this->autor=$autor;
         $this->ISBN=$ISBN;

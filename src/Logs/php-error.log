@@ -450,3 +450,211 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(16): App\Models\LibrosModel->__construct(NULL)
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 17
+[12-Apr-2025 22:03:10 America/Tegucigalpa] PHP Warning:  Undefined variable $db in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 22:03:10 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\LibrosModel::__construct(), 1 passed in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16 and exactly 8 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(16): App\Models\LibrosModel->__construct(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 17
+[12-Apr-2025 22:08:34 America/Tegucigalpa] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16
+[12-Apr-2025 22:08:34 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\LibrosModel::__construct(), 1 passed in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 16 and exactly 8 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(16): App\Models\LibrosModel->__construct(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 17
+[12-Apr-2025 22:40:42 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:40:42 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:40:42 America/Tegucigalpa] getLogin ejecutado
+[12-Apr-2025 22:41:39 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:41:39 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:41:39 America/Tegucigalpa] getLogin ejecutado
+[12-Apr-2025 22:44:37 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:44:37 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:44:37 America/Tegucigalpa] Validando endpoint: method = get, endpoint = login, route = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 22:44:37 America/Tegucigalpa] getLogin ejecutado
+[12-Apr-2025 22:49:39 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:49:39 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:49:39 America/Tegucigalpa] Validando endpoint: method = get, endpoint = login, route = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 22:49:39 America/Tegucigalpa] Entrando en la condición simplificada
+[12-Apr-2025 22:49:39 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 115
+[12-Apr-2025 22:52:27 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:52:28 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:52:28 America/Tegucigalpa] Validando endpoint: method = get, endpoint = login, route = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 22:52:28 America/Tegucigalpa] Entrando en la condición simplificada
+[12-Apr-2025 22:52:28 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 115
+[12-Apr-2025 22:53:27 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:53:27 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:53:27 America/Tegucigalpa] Validando endpoint: method = get, endpoint = login, route = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 22:53:27 America/Tegucigalpa] Entrando en la condición simplificada
+[12-Apr-2025 22:53:27 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 115
+[12-Apr-2025 22:55:02 America/Tegucigalpa] Creando instancia de UserController
+[12-Apr-2025 22:55:02 America/Tegucigalpa] Instancia creada, llamando a getLogin
+[12-Apr-2025 22:55:02 America/Tegucigalpa] Validando endpoint: method = get, endpoint = login, route = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 22:55:02 America/Tegucigalpa] Entrando en la condición simplificada
+[12-Apr-2025 22:55:02 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 115
+[12-Apr-2025 23:01:35 America/Tegucigalpa] Correo capturado desde ruta: awmartinez@unah.hn, Contraseña capturada: f23456789
+[12-Apr-2025 23:01:35 America/Tegucigalpa] Validando endpoint: method = get, endpoint = login, route = login/awmartinez@unah.hn/f23456789/
+[12-Apr-2025 23:01:36 America/Tegucigalpa] Entrando en la condición simplificada
+[12-Apr-2025 23:02:15 America/Tegucigalpa] Correo capturado desde ruta: awmartinez@unah.hn, Contraseña capturada: f23456789
+[12-Apr-2025 23:02:15 America/Tegucigalpa] Entrando en la condición simplificada
+[12-Apr-2025 23:04:54 America/Tegucigalpa] Correo capturado desde ruta: awmartinez@unah.hn, Contraseña capturada: f23456789
+[12-Apr-2025 23:04:55 America/Tegucigalpa] Email procesado: awmartinez@unah.hn, Contraseña procesada: f23456789
+[12-Apr-2025 23:06:59 America/Tegucigalpa] Segmentos de ruta capturados: Array
+(
+    [0] => login
+    [1] => awmartinez@unah.hn
+    [2] => f23456789
+    [3] => 
+)
+
+[12-Apr-2025 23:06:59 America/Tegucigalpa] Email procesado: awmartinez@unah.hn, Contraseña procesada: f23456789
+[12-Apr-2025 23:14:42 America/Tegucigalpa] Segmentos de ruta capturados: Array
+(
+    [0] => login
+    [1] => awmartinez@unah.hn
+    [2] => f23456789
+    [3] => 
+)
+
+[12-Apr-2025 23:14:42 America/Tegucigalpa] Email procesado: awmartinez@unah.hn, Contraseña procesada: f23456789
+[12-Apr-2025 23:21:01 America/Tegucigalpa] Segmentos de ruta capturados: Array
+(
+    [0] => login
+    [1] => awmartinez@unah.hn
+    [2] => f23456789
+    [3] => 
+)
+
+[12-Apr-2025 23:21:03 America/Tegucigalpa] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 162
+[12-Apr-2025 23:21:25 America/Tegucigalpa] Segmentos de ruta capturados: Array
+(
+    [0] => login
+    [1] => awmartinez@unah.hn
+    [2] => f23456789
+    [3] => 
+)
+
+[12-Apr-2025 23:21:26 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\UserModel::Login(), 0 passed in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 115 and exactly 2 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:112
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(115): App\Models\UserModel::Login()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(70): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 112
+[12-Apr-2025 23:27:54 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\UserModel::Login(), 0 passed in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 115 and exactly 2 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:112
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(115): App\Models\UserModel::Login()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(70): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 112
+[13-Apr-2025 00:16:05 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:16:05 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:18:38 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:18:39 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:19:04 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:19:04 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:19:55 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:19:55 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:22:13 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:22:40 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:22:40 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:23:27 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:23:27 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined function App\Models\echo_log() in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:128
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(99): App\Models\UserModel::Login('awmartinez@unah...', 'f23456789')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(70): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 128
+[13-Apr-2025 00:24:14 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:24:14 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:24:57 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:24:57 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:28:10 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:28:10 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:32:10 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:32:11 America/Tegucigalpa] Datos obtenidos del procedimiento: Array
+(
+    [Contrasena] => $2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT
+    [IDToken] => e679a513f413f3bc3706213a3714c8c4244655bea8929afce926ea94b724627b07996d20737aee8c0c3895ebe207f9a5c8d59471fc39c09e1c6ca316979424c7
+    [Nombre] => Mariax
+    [Rol_Id_Rol] => 3
+)
+
+[13-Apr-2025 00:32:11 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:37:43 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:37:43 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 00:37:43 America/Tegucigalpa] Contraseña no válida: ingresada (12345), almacenada ($2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT)
+[13-Apr-2025 00:41:42 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:41:42 America/Tegucigalpa] Falló la comparación de contraseñas: ingresada (12345), almacenada ($2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT)
+[13-Apr-2025 00:41:56 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:41:58 America/Tegucigalpa] Falló la comparación de contraseñas: ingresada (12345), almacenada ($2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT)
+[13-Apr-2025 00:46:55 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:46:55 America/Tegucigalpa] Falló la comparación de contraseñas: ingresada (12345), almacenada ($2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT)
+[13-Apr-2025 00:50:02 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 00:50:02 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT
+    [IDToken] => e679a513f413f3bc3706213a3714c8c4244655bea8929afce926ea94b724627b07996d20737aee8c0c3895ebe207f9a5c8d59471fc39c09e1c6ca316979424c7
+    [Nombre] => Mariax
+    [Rol_Id_Rol] => 3
+)
+
+[13-Apr-2025 00:50:03 America/Tegucigalpa] Contraseña no coincide para el correo: alejandrahn1@gmail.com
+[13-Apr-2025 07:48:08 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(116): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(99): App\Models\UserModel::Login('alejandrahn1@gm...', '12345')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(70): require('C:\\xampp\\htdocs...')
+#5 {main}
+[13-Apr-2025 07:51:23 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 07:51:24 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT
+    [IDToken] => e679a513f413f3bc3706213a3714c8c4244655bea8929afce926ea94b724627b07996d20737aee8c0c3895ebe207f9a5c8d59471fc39c09e1c6ca316979424c7
+    [Nombre] => Mariax
+    [Rol_Id_Rol] => 3
+)
+
+[13-Apr-2025 07:51:25 America/Tegucigalpa] Contraseña no válida: ingresada (12345), almacenada ($2y$10$bporoWpIC..LmBP7afi58ufJA1ZHkc0LkHKbBT)
+[13-Apr-2025 07:59:24 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 07:59:24 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:02:36 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:02:36 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:04:50 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:06:11 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:06:12 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 08:06:13 America/Tegucigalpa] Contraseña no válida: ingresada (99l1234567), almacenada ($2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S)
+[13-Apr-2025 08:06:34 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:06:34 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 08:06:35 America/Tegucigalpa] Contraseña no válida: ingresada (99l12345678), almacenada ($2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S)
+[13-Apr-2025 08:08:47 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 08:08:48 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:11:14 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 08:11:15 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 08:11:15 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 08:11:16 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn

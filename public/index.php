@@ -9,13 +9,19 @@
     require dirname(__DIR__) . '/src/Controllers/LibrosController.php'; // Ajusta la ruta según tu estructura
     require dirname(__DIR__) . '\vendor\autoload.php';
 
+    
     $url = explode('/',$_GET['route']);
+   
 
-    $lista = ['auth', 'user','login', 'libros','']; // lista de rutas permitidas
+$lista = ['auth', 'user','login', 'libros','Prestamos','Devoluciones','Notificaciones','']; // lista de rutas permitidas
     $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
+
+    $lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
+    $caso = '';
+
+
     $controller = new LibrosController(new LibrosModel($db), new TokenJwt());
-
-
+    
     //caso libros//
     if (isset($controller) && is_object($controller)) {
     switch ($_SERVER['REQUEST_METHOD']) {  
@@ -35,15 +41,17 @@
         echo "Error: El controlador no está inicializado.";
     }
 
-    /*$lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
+    
+    $lista = ['auth', 'user','login','libros','registrer']; // lista de rutas permitidas
     $caso = '';
+
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
     if($caso != ""){
         $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
     }else{
         $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
-    }*/
+    }
 
 
 

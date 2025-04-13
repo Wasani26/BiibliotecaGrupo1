@@ -77,20 +77,41 @@ public function __construct($method,$route,$params,$data,$headers){
 
  }
      
-     final public function getLogin($endpoint){
-        /*error_log("Entrando al controlador: método = $this->method, ruta = $this->route");*/
-        /*error_log("Método recibido: $this->method");*/
-        /*header("Content-Type: application/json; charset=UTF-8");*/
-        /*header("Content-Type: application/json; charset=UTF-8");
-        echo json_encode(["status" => "Hello from PHP!"]);
+ final public function getLogin($endpoint) {
+    if (ob_get_length()) ob_end_clean();
+    header("Content-Type: application/json; charset=UTF-8");
+
+    // Captura los parámetros
+    $email = strtolower($this->params[1] ?? '');
+    $pass = $this->params[2] ?? '';
+    error_log("Contraseña ingresada: $pass");
+
+    // Validaciones
+    if (empty($email) || empty($pass)) {
+        echo json_encode(responseHTTP::status400('Todos los campos son requeridos.'));
         exit;
-        echo json_encode(["status" => "testing response"]);*/
-        if (ob_get_length()) ob_end_clean();
-        header("Content-Type: application/json; charset=UTF-8");
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo json_encode(responseHTTP::status400('El correo debe llevar el formato correcto, proceda a corregir.'));
+        exit;
+    }
 
+    // Llamada al modelo con los parámetros correctos
+    try {
+        $response = UserModel::Login($email, $pass);
+        echo json_encode($response); // Enviar la respuesta como JSON
+    } catch (Exception $e) {
+       /* error_log("Error al llamar al modelo: " . $e->getMessage());*/
+       
 
-        //validar method y endpoint(ruta al recurso)
-        if($this-> method == 'get' && $endpoint == $this-> route){
+        echo json_encode(responseHTTP::status500('Error interno del servidor.'));
+    }
+
+    exit;
+}
+
+   
+        /*if($this-> method == 'get' && $endpoint == $this-> route){
+           
            $email = strtolower($this->params[1]);
            $pass = $this->params[2];
            //algunas otras validaciones
@@ -104,11 +125,19 @@ public function __construct($method,$route,$params,$data,$headers){
              UserModel::setContrasena($pass);
              echo json_encode(UserModel::Login());
 
-             
-          
         }
          exit;
-     }
+     }*/
+     /*if (true) {
+        error_log("Entrando en la condición simplificada");
+        $email = strtolower($this->params[1]);
+        $pass = $this->params[2];
+        
+        // Respuesta de prueba
+        echo json_encode(["status" => "Condición simplificada funciona"]);
+        exit;
+    }*/
+    
 }
 
 /*final public function delete($endpoint){
@@ -120,6 +149,6 @@ public function __construct($method,$route,$params,$data,$headers){
  }*/
  
 
-}
+
 
 ?>

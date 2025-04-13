@@ -110,6 +110,7 @@ class UserModel extends connectionDB{
  
 
  final public static function Login(string $correo, string $password) {
+
   /*error_log("Contraseña recibida: " . $password);*/ //prueba de contraseña que se compara
   try{
       $con = self::getConnection();
@@ -118,28 +119,29 @@ class UserModel extends connectionDB{
       $stmt->execute([
           ':Correo_electronico' => $correo // Usar el correo pasado como argumento
       ]);
+      
 
       if($stmt->rowCount() == 0){
-          return responseHTTP::status400('Usuario o Contraseña incorrectas!');
+          return responseHTTP::status400('Usuario o Contraseña incorrectas!!');
       }else{
-          foreach ($stmt as $val) {
-              /*error_log(print_r($val, true));*/  //para ver que usuario es traido de la BD en php-error.log
-              if(Security::validatePassword($password, $val['Contrasena'])){ // Usar la contraseña pasada como argumento
-                error_log("La contraseña no coincide para el usuario con correo: $correo");
-                  $payload =[
-                      'IDToken' => $val['IDToken']
-                  ];
-                  $token = Security::createTokenJwt(Security::secretKey(),$payload);
-                  $data = [
-                      'Nombre'  => $val['Nombre'],
-                      'Rol_Id_Rol'  => $val['Rol_Id_Rol'],
-                      'token'   =>  $token,
-                  ];
-                  return($data);
-              }else{
-                  return responseHTTP::status400('Usuario o Contraseña incorrectas!');
-              }
+        foreach ($stmt as $val) {
+         error_log("Usuario encontrado: " . print_r($val, true));
+          if (password_verify($password, $val['Contrasena'])) {
+              $payload = ['IDToken' => $val['IDToken']];
+              $token = Security::createTokenJwt(Security::secretKey(), $payload);
+              $data = [
+                  'Nombre' => $val['Nombre'],
+                  'Rol_Id_Rol' => $val['Rol_Id_Rol'],
+                  'token' => $token,
+              ];
+              return $data;
+          } else {
+              error_log("Contraseña no coincide para el correo: $correo");
+              /*error_log("Contraseña no válida: ingresada ($password), almacenada ({$val['Contrasena']})");*/
+              return responseHTTP::status400('Usuario o Contraseña incorrectas!');
           }
+      }
+      
       }
   } catch (\PDOException $e){
       error_log("UserModel::Login -> ".$e);
