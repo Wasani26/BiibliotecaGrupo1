@@ -1,4 +1,5 @@
 <?php
+namespace App\Models;
 use App\Config\responseHTTP;
 use App\DB\connectionDB;
 
@@ -57,7 +58,7 @@ class LibrosModel extends connectionDB{
             $data['Categoria'],   
             $data['Disponibilidad'],   
             $data['Ubicacion_biblioteca'],   
-            $data['Resumen'],   
+            $data['Resumen'],  
             $data['Portada']  
         ]);  
         return $this->db->lastInsertId(); // Devuelve el ID del nuevo libro  //

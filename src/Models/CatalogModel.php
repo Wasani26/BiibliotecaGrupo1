@@ -1,4 +1,5 @@
 <?php
+namespace App\Models;
 
 //incompleto//
 class CatalogoLibros extends connectionDB {
