@@ -13,28 +13,7 @@
     $url = explode('/',$_GET['route']);
 
     
-    
-    //caso libros//
-   /* if (isset($controller) && is_object($controller)) {
-    switch ($_SERVER['REQUEST_METHOD']) {  
-        case 'GET':  
-            if ($url[0] === 'libros') {  
-                $controller->obtenerLibros();  
-            }  
-            break;  
-        case 'POST':  
-            if ($url[0] === 'libros') {  
-                $controller->crearLibro(json_decode(file_get_contents("php://input"), true));  
-            }  
-            // Otras rutas para POST  
-            break;
-        }  
-    }else{
-        echo "Error: El controlador no está inicializado.";
-    }*/
-
-    
-    $lista = ['auth', 'user','login','libros','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','libros', 'catalogo','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
