@@ -11,11 +11,10 @@
 
     $url = explode('/',$_GET['route']);
 
-    $lista = ['auth', 'user','login', 'libros','']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login', 'libros','Prestamos','Devoluciones','Notificaciones','']; // lista de rutas permitidas
     $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
     $controller = new LibrosController(new LibrosModel($db), new TokenJwt());
-
-
+    
     //caso libros//
     if (isset($controller) && is_object($controller)) {
     switch ($_SERVER['REQUEST_METHOD']) {  
@@ -73,4 +72,4 @@
     }
  
 
-?>
+?
