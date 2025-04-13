@@ -69,6 +69,17 @@ class LibrosModel extends connectionDB{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);  
     }  
 
+    public function eliminarLibro($id) {
+        try {
+            $query = "DELETE FROM libros WHERE id = ?";
+            $stmt = $this->db->prepare($query);
+            $stmt->execute([$id]);
+            return $stmt->rowCount(); // Devuelve el número de filas afectadas //
+        } catch (\PDOException $e) {
+            error_log("LibrosModel::eliminarLibro -> " . $e->getMessage());
+            return 0; 
+        }
+
     //conexion//
     final public static function getAll() {  
         try {  

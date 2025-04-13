@@ -4,9 +4,7 @@ use App\Config\responseHTTP;
 use App\Config\Security;
 use App\Controllers\LibrosController;
 use App\Config\UserController;
-
-
-require_once 'public/index.php';   
+  
 
 $controller = new LibrosController ($data);
 
@@ -27,7 +25,7 @@ $headers = getallheaders();
 
 $caso = filter_input(INPUT_GET, "caso");
 
-switch($caso) { // Evaluar $caso  
+switch($caso) { // Evaluar $caso  //
     case 'obtenerLibros':  
         $controller->obtenerLibros($data); // Llamar método Obtener Libros  
         break;  
@@ -38,5 +36,6 @@ switch($caso) { // Evaluar $caso
         echo json_encode(responseHTTP::status200('La ruta no existe'));  
         break;  
 }  
+
 
 ?>
