@@ -32,10 +32,14 @@ switch($caso) { // Evaluar $caso  //
     case 'crearLibro': 
       //  $data = json_decode(file_get_contents("php://input"), true)    
         $controller->crearLibro($data);
+        break;
+    case 'eliminarLibro':
+        $controller->eliminarLibro($data);
     default:  
         echo json_encode(responseHTTP::status200('La ruta no existe'));  
         break;  
 }  
+
 
 
 ?>
