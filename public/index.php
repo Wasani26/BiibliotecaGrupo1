@@ -11,7 +11,7 @@
     $route = $url[0]??'';
 
     
-    $lista = ['auth', 'user','login','Libros', 'Catalogo','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','Libros', 'Catalogo','registrer','ListaPrestamo','Devoluciones','Notificaciones']; // lista de rutas permitidas
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
