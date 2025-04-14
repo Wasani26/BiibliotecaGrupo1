@@ -2,16 +2,13 @@
     use App\Config\errorlogs;
     use App\Config\responseHTTP;
     use App\Config\Security;
-    use App\Controllers\LibrosController;
-    use App\Config\TokenJwt;
-    use App\Models\LibrosModel;
 
     //require dirname(__DIR__) . '/src/Controllers/LibrosController.php'; // Ajusta la ruta según tu estructura
     require dirname(__DIR__) . '\vendor\autoload.php';
 
     
     $url = explode('/',$_GET['route']);
-    $route = $url[0];
+    $route = $url[0]??'';
 
     
     $lista = ['auth', 'user','login','libros', 'catalogo','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas

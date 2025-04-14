@@ -3,7 +3,7 @@ use App\Config\errorlogs;
 use App\Config\responseHTTP;
 use App\Config\Security;
 use App\Controllers\LibrosController;
-use App\Config\UserController;
+use App\Models\LibrosModel;
   
 
 $controller = new LibrosController ($data);
@@ -17,11 +17,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === '/api/l
     echo json_encode(['status' => 'error', 'message' => 'Ruta no encontrada']);  
 }  
 
+$method = $_SERVER['REQUEST_METHOD'];
+$pathParts = explode('/', $_GET['route'] ?? '');
+$endpoint = $pathParts[1] ?? '';
+/*
 $method = strtolower($_SERVER['REQUEST_METHOD']); 
 $route = $_GET['route']; //captura la ruta 
 $params = explode('/', $route); 
 $data = json_decode(file_get_contents("php://input"),true); 
-$headers = getallheaders(); 
+$headers = getallheaders(); */
 
 $caso = filter_input(INPUT_GET, "caso");
 

@@ -1,9 +1,7 @@
 <?php
 use App\Config\errorlogs;
 use App\Config\responseHTTP;
-use App\Config\Security;
 use App\Controllers\CatalogController;
-use App\Models\CatalogModel;
 
 $controller = new CatalogController($db);
 

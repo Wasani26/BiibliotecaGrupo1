@@ -1,7 +1,6 @@
 <?php
 namespace App\Models;
 
-//incompleto//
 class CatalogoModel extends connectionDB {
     private $Nombre;
 
