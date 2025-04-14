@@ -3,15 +3,15 @@
     use App\Config\responseHTTP;
     use App\Config\Security;
 
-    //require dirname(__DIR__) . '/src/Controllers/LibrosController.php'; // Ajusta la ruta según tu estructura
+    require dirname(__DIR__) . '/src/Controllers/LibrosController.php'; // Ajusta la ruta según tu estructura
     require dirname(__DIR__) . '\vendor\autoload.php';
-
+    require_once __DIR__ . '/../src/Routes/Libros.php';
     
     $url = explode('/',$_GET['route']);
     $route = $url[0]??'';
 
     
-    $lista = ['auth', 'user','login','libros', 'catalogo','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','Libros', 'Catalogo','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
@@ -20,7 +20,6 @@
     }else{
         $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
     }
-
 
 
     errorlogs::activa_error_logs(); //activamos los errors    

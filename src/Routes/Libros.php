@@ -3,7 +3,7 @@ use App\Config\errorlogs;
 use App\Config\responseHTTP;
 use App\Config\Security;
 use App\Controllers\LibrosController;
-use App\Models\LibrosModel;
+require_once 'controllers/LibrosController.php'; 
   
 
 $controller = new LibrosController ($data);
@@ -39,7 +39,6 @@ switch($caso) { // Evaluar $caso  //
         echo json_encode(responseHTTP::status200('La ruta no existe'));  
         break;  
 }  
-
 
 
 ?>
