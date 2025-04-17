@@ -658,3 +658,116 @@ Stack trace:
 )
 
 [13-Apr-2025 08:11:16 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[13-Apr-2025 14:49:30 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected variable "$url", expecting "function" or "const" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php on line 74
+[13-Apr-2025 14:56:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php on line 9
+[13-Apr-2025 14:56:58 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "public", expecting "abstract" or "final" or "readonly" or "class" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 85
+[13-Apr-2025 15:17:19 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "public", expecting "abstract" or "final" or "readonly" or "class" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 85
+[13-Apr-2025 15:18:07 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "public", expecting "abstract" or "final" or "readonly" or "class" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 85
+[13-Apr-2025 15:18:45 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "public", expecting "abstract" or "final" or "readonly" or "class" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 85
+[13-Apr-2025 15:19:01 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php on line 8
+[13-Apr-2025 15:19:01 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php on line 8
+[13-Apr-2025 15:19:01 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php on line 8
+[13-Apr-2025 15:19:02 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php on line 8
+[13-Apr-2025 15:19:02 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php on line 8
+[13-Apr-2025 15:19:02 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "public", expecting "abstract" or "final" or "readonly" or "class" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 85
+[13-Apr-2025 15:21:04 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "public", expecting "abstract" or "final" or "readonly" or "class" in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 85
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $Titulo in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 18
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $autor in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 19
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $ISBN in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 20
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $Categoria in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 21
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $Disponibilidad in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 22
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $Ubicacion_biblioteca in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 23
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $Resumen in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 24
+[13-Apr-2025 15:30:07 America/Tegucigalpa] PHP Warning:  Undefined variable $Portada in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 25
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $Titulo in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 18
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $autor in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 19
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $ISBN in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 20
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $Categoria in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 21
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $Disponibilidad in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 22
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $Ubicacion_biblioteca in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 23
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $Resumen in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 24
+[13-Apr-2025 15:31:00 America/Tegucigalpa] PHP Warning:  Undefined variable $Portada in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 25
+[13-Apr-2025 15:35:16 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\LibrosModel::__construct(): Argument #1 ($data) must be of type array, string given, called in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php on line 15 and defined in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php:17
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\LibrosController.php(15): App\Models\LibrosModel->__construct('post')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Libros.php(15): App\Controllers\LibrosController->__construct('post', 'Libros/', Array, Array, Array)
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(64): require('C:\\xampp\\htdocs...')
+#3 {main}
+13-Apr-2025 15:36:05 America/Tegucigalpa] PHP Deprecated:  Creation of dynamic property App\Models\LibrosModel::$db is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 18  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\LibrosModel.php on line 17
+
+[13-Apr-2025 16:08:10 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 16:08:11 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 16:08:11 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 16:08:11 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[13-Apr-2025 17:08:56 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 17:08:56 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:08:56 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 17:08:56 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[13-Apr-2025 17:13:38 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 17:13:38 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:13:38 America/Tegucigalpa] PHP Warning:  Undefined variable $correo in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 120
+[13-Apr-2025 17:14:30 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 17:14:31 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:14:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Undefined constant App\Models\UserModel::setCorreo_electronico in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:120
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(100): App\Models\UserModel::Login('alejaalo@unah.h...', '99l12345678')
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#2 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(65): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 120
+[13-Apr-2025 17:15:28 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 17:15:28 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:15:28 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\UserModel::setCorreo_electronico(), 0 passed in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 120 and exactly 1 expected in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php:55
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(120): App\Models\UserModel::setCorreo_electronico()
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(100): App\Models\UserModel::Login('alejaalo@unah.h...', '99l12345678')
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(65): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php on line 55
+[13-Apr-2025 17:23:07 America/Tegucigalpa] Contraseña ingresada: 99l12345678
+[13-Apr-2025 17:23:07 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:25:11 America/Tegucigalpa] Contraseña ingresada: 99l1234567
+[13-Apr-2025 17:25:12 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:26:23 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[13-Apr-2025 17:26:24 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:28:20 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[13-Apr-2025 17:28:20 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:29:22 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[13-Apr-2025 17:29:25 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:29:25 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 17:29:25 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 17:29:25 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[13-Apr-2025 17:32:02 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[13-Apr-2025 17:32:02 America/Tegucigalpa] Conexión exitosa
+[13-Apr-2025 17:32:02 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[13-Apr-2025 17:32:02 America/Tegucigalpa] La contraseña es incorrecta
+[13-Apr-2025 17:32:02 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn

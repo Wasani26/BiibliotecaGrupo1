@@ -6,14 +6,12 @@
     use App\Config\TokenJwt;
     use App\Models\LibrosModel;
 
-    require dirname(__DIR__) . '/src/Controllers/LibrosController.php'; // Ajusta la ruta según tu estructura
     require dirname(__DIR__) . '\vendor\autoload.php';
 
     
     $url = explode('/',$_GET['route']);
 
-    
-    
+
     //caso libros//
    /* if (isset($controller) && is_object($controller)) {
     switch ($_SERVER['REQUEST_METHOD']) {  
@@ -34,7 +32,8 @@
     }*/
 
     
-    $lista = ['auth', 'user','login','libros','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','Libros','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
+    /*$file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; */
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
@@ -43,9 +42,10 @@
     }else{
         $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
     }
+  
+    
 
-
-
+    
     errorlogs::activa_error_logs(); //activamos los errors    
     if(isset($_GET['route'])){
         if(!in_array($url[0], $lista)){

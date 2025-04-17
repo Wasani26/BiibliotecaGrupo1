@@ -69,28 +69,20 @@ $("#MiForm").submit(function (event) {
 //validación html para crear un usuario
 
 $("#FormCrearUsuario").submit(function (event) {
-    event.preventDefault(); // Evitamos el envío tradicional del formulario.
+    event.preventDefault();
 
-    // Capturar valores de los campos
+    // Capturar valores
     let nombre = $("#Nombre").val();
     let correo = $("#Correo").val();
-    let contraseña = $("#Contraseña").val();
+    let contraseña = $("#Contrasena").val();
     let confirmarContraseña = $("#ConfirmarContraseña").val();
     let telefono = $("#Telefono").val();
-    var caso = "registrer";
 
-    /*let datos = {
-        Nombre: $("#Nombre").val(),
-        Correo: $("#Correo").val(),
-        Contraseña: $("#Contraseña").val(),
-        Telefono: $("#Telefono").val()
-    };*/
+    // Regex
+    const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const telefonoRegex = /^\d{4}-\d{4}$/;
 
-    // Regex para validaciones
-    const correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Formato de correo
-    const telefonoRegex = /^\d{4}-\d{4}$/; // Formato de teléfono: 9790-0387
-
-    // Validar que todos los campos estén llenos
+    // Validaciones
     if (!nombre || !correo || !contraseña || !confirmarContraseña || !telefono) {
         Swal.fire({
             title: "Debes llenar todos los campos!",
@@ -100,7 +92,6 @@ $("#FormCrearUsuario").submit(function (event) {
         return false;
     }
 
-    // Validar formato del correo
     if (!correoRegex.test(correo)) {
         Swal.fire({
             title: "Formato de correo inválido!",
@@ -110,7 +101,6 @@ $("#FormCrearUsuario").submit(function (event) {
         return false;
     }
 
-    // Validar que las contraseñas coincidan
     if (contraseña !== confirmarContraseña) {
         Swal.fire({
             title: "Las contraseñas no coinciden!",
@@ -120,7 +110,6 @@ $("#FormCrearUsuario").submit(function (event) {
         return false;
     }
 
-    // Validar formato del teléfono
     if (!telefonoRegex.test(telefono)) {
         Swal.fire({
             title: "Formato de teléfono inválido!",
@@ -130,27 +119,41 @@ $("#FormCrearUsuario").submit(function (event) {
         return false;
     }
 
+    // Enviar datos
+    let datos = {
+        Nombre: nombre,
+        Correo_electronico: correo,
+        Contrasena: contraseña,
+        confirmaContrasena: confirmarContraseña,
+        Telefono: telefono
+    };
+    console.log(datos)
 
-    // Aquí podrías agregar tu petición AJAX
     $.ajax({
-        url: "localhost/BibliotecaGrupo1/public/registrer/",
+        url: 'user?route=user/&caso=user',
         type: "POST",
         data: JSON.stringify(datos),
         contentType: "application/json",
         success: function (response) {
+            console.log(response)
             Swal.fire({
                 title: "¡Usuario Creado!",
-                text: response.message,
-                icon: "success"
+                text: response.message || "El usuario se creó correctamente.",
+                icon: "success",
             });
         },
-        error: function () {
+        error: function (xhr, status, error) {
+            console.error("Error:", error);
+            console.log("XHR:", xhr);
+            console.log("Status:", status);
             Swal.fire({
                 title: "Error",
                 text: "Hubo un problema al crear el usuario.",
-                icon: "error"
+                icon: "error",
             });
         }
+        
     });
+    
 });
 

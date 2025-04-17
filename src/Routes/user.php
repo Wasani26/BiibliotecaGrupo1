@@ -1,5 +1,6 @@
 <?php
 //echo "llegue al recurso user";
+echo "¡Estoy llegando al backend!";
 require_once dirname(__DIR__, 2) . '/vendor/autoload.php'; // Cargar el autoload de Composer y está alternativa la saque de chat gpt (apuntado en notas)
 
 use App\Controllers\UserController; //cambio la importación a ver que tal
@@ -18,7 +19,7 @@ $app->delete('user'); //llamada de delete
 
 $caso = filter_input(INPUT_GET,"caso");
 switch($caso){
-    case 'registrer':
+    case 'user':
         $app = new UserController($method, $route, $params, $data, $headers);
         $app->post('user');
         exit;

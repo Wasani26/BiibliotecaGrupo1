@@ -126,7 +126,7 @@ class UserModel extends connectionDB{
       }else{
         foreach ($stmt as $val) {
          error_log("Usuario encontrado: " . print_r($val, true));
-          if (password_verify($password, $val['Contrasena'])) {
+          if (Security::validatePassword($password, $val['Contrasena'])) {
               $payload = ['IDToken' => $val['IDToken']];
               $token = Security::createTokenJwt(Security::secretKey(), $payload);
               $data = [

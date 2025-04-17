@@ -69,6 +69,7 @@ public function __construct($method,$route,$params,$data,$headers){
           echo json_encode(responseHTTP::status400('El rol puesto es invalido'));
         }*/else{
         new UserModel($this->data);
+        error_log(print_r($this->data, true));
          echo json_encode(UserModel::post());
         }      
         //echo json_encode('post');

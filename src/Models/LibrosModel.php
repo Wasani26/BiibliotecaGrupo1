@@ -4,6 +4,8 @@ use App\Config\responseHTTP;
 use App\DB\connectionDB;
 
 class LibrosModel extends connectionDB{
+
+    private $db;
     //Conexion de propiedas privadas//
     private $Titulo;
     private $autor;
@@ -14,17 +16,18 @@ class LibrosModel extends connectionDB{
     private $Resumen;
     private $Portada;
 
-    public function __construct($db){
-        $this->Titulo=$Titulo;
-        $this->autor=$autor;
-        $this->ISBN=$ISBN;
-        $this->Categoria=$Categoria;
-        $this->Disponibilidad=$Disponibilidad;
-        $this->Ubicacion_biblioteca=$Ubicacion_biblioteca;
-        $this->Resumen=$Resumen;
-        $this->Portada=$Portada;
+    public function __construct($db, $Titulo = null, $autor = null, $ISBN = null, $Categoria = null, $Disponibilidad = null, $Ubicacion_biblioteca = null, $Resumen = null, $Portada = null) {
+        $this->db = $db; // Inicializa la conexión a la base de datos
+        $this->Titulo = $Titulo;
+        $this->autor = $autor;
+        $this->ISBN = $ISBN;
+        $this->Categoria = $Categoria;
+        $this->Disponibilidad = $Disponibilidad;
+        $this->Ubicacion_biblioteca = $Ubicacion_biblioteca;
+        $this->Resumen = $Resumen;
+        $this->Portada = $Portada;
     }
-
+    
     //Getters//
     public function getTitulo()  { return $this->Titulo; }
     public function getAutor()  { return $this->autor; }
@@ -82,20 +85,21 @@ class LibrosModel extends connectionDB{
         }
 
     //conexion//
-    final public static function getAll() {  
-        try {  
-            $con = self::getConnection(); 
-            $query = "CALL ConsultarLibros()"; 
-            $stmt = $con->prepare($query);  
-            $stmt->execute();  
-            $res = $stmt->fetchAll(\PDO::FETCH_ASSOC);  
-            return $res;  
-
-        } catch (\PDOException $e) {    
-            error_log("userModel::getAll ->".$e); //registra el error  
-            die (json_encode(responseHTTP::status500()));  
-        }  
-    }  
+    /*public function getAll() {
+        try {
+            $con = $this->db; // Asegúrate de que $this->db es una conexión válida
+            $query = "CALL ConsultarLibros()";
+            $stmt = $con->prepare($query);
+            $stmt->execute();
+            $res = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            return $res;
+    
+        } catch (\PDOException $e) {
+            error_log("LibrosModel::getAll -> " . $e->getMessage());
+            return responseHTTP::status500(['error' => $e->getMessage()]);
+        }
+    }*/
+     
 
 
 }
