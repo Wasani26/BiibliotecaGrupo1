@@ -1,8 +1,7 @@
 <?php
 namespace App\Models;
 
-//incompleto//
-class CatalogoLibros extends connectionDB {
+class CatalogoModel extends connectionDB {
     private $Nombre;
 
     //Construtor//
@@ -10,7 +9,7 @@ class CatalogoLibros extends connectionDB {
         $this->Nombre=$Nombre;
     }
     public function __construct($db) {
-        $this->db = $db; // Recibe la conexión a la base de datos en el constructor
+        $this->db = $db; // Recibe la conexión a la base de datos en el constructor //
     }
 
     public function obtenerTodosLosLibros() {
@@ -33,26 +32,27 @@ class CatalogoLibros extends connectionDB {
             return $stmt->fetch(\PDO::FETCH_ASSOC);
         } catch (\PDOException $e) {
             error_log("CatalogoModel::obtenerLibroPorId -> " . $e->getMessage());
-            return null; // Devuelve null en caso de error
+            return null; // Devuelve null en caso de error //
         }
     }
 
     public function buscarLibros($termino) {
         try {
-            $termino = '%' . $termino . '%'; // Para búsquedas parciales (LIKE)
+            $termino = '%' . $termino . '%'; // Para búsquedas parciales (LIKE) //
             $query = "SELECT * FROM " . $this->table . " WHERE
                       titulo LIKE :termino OR
                       autor LIKE :termino OR
                       isbn LIKE :termino OR
-                      categoria LIKE :termino"; // Puedes agregar más campos a la búsqueda
+                      categoria LIKE :termino"; // Puedes agregar más campos a la búsqueda //
             $stmt = $this->db->prepare($query);
             $stmt->bindParam(':termino', $termino, \PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->fetchAll(\PDO::FETCH_ASSOC);
         } catch (\PDOException $e) {
             error_log("CatalogoModel::buscarLibros -> " . $e->getMessage());
-            return []; // Devuelve un array vacío en caso de error
+            return []; // Devuelve un array vacío en caso de error //
         }
     }
+}
 
 ?>

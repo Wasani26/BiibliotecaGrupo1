@@ -1,6 +1,5 @@
 <?php
 
-namespace App\Controllers;
 use App\Config\responseHTTP;
 use App\DB\connectionDB;
 use App\Config\TokenJwt;  
@@ -61,16 +60,4 @@ class LibrosController {
         }
     }
 
-    //conexion//
-    final public function getAll ($endpoint){
-        //validar//
-        if ($this->method == 'get' && $endpoint == $this->route){
-            return LibrosModel::getAll();
-            exit;
-        }
-    }
-    
-}
-   
-    
 ?>

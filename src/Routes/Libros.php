@@ -3,7 +3,7 @@ use App\Config\errorlogs;
 use App\Config\responseHTTP;
 use App\Config\Security;
 use App\Controllers\LibrosController;
-use App\Config\UserController;
+require_once 'controllers/LibrosController.php'; 
   
 
 $method = strtolower($_SERVER['REQUEST_METHOD']); 
@@ -21,6 +21,9 @@ switch($caso) { // Evaluar $caso  //
     case 'crearLibro': 
       //  $data = json_decode(file_get_contents("php://input"), true)    
         $controller->crearLibro($data);
+        break;
+    case 'eliminarLibro':
+        $controller->eliminarLibro($data);
     default:  
         echo json_encode(responseHTTP::status200('La ruta no existe'));  
         break;  

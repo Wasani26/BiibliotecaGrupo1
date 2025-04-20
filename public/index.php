@@ -2,38 +2,20 @@
     use App\Config\errorlogs;
     use App\Config\responseHTTP;
     use App\Config\Security;
-    use App\Controllers\LibrosController;
-    use App\Config\TokenJwt;
-    use App\Models\LibrosModel;
 
     require dirname(__DIR__) . '\vendor\autoload.php';
-
+    require_once __DIR__ . '/../src/Routes/Libros.php';
     
     $url = explode('/',$_GET['route']);
+    $route = $url[0]??'';
 
-
-    //caso libros//
-   /* if (isset($controller) && is_object($controller)) {
-    switch ($_SERVER['REQUEST_METHOD']) {  
-        case 'GET':  
-            if ($url[0] === 'libros') {  
-                $controller->obtenerLibros();  
-            }  
-            break;  
-        case 'POST':  
-            if ($url[0] === 'libros') {  
-                $controller->crearLibro(json_decode(file_get_contents("php://input"), true));  
-            }  
-            // Otras rutas para POST  
-            break;
-        }  
-    }else{
-        echo "Error: El controlador no está inicializado.";
-    }*/
 
     
-    $lista = ['auth', 'user','login','Libros','registrer','Prestamos','Devoluciones','Notificaciones']; // lista de rutas permitidas
+   
     /*$file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; */
+
+    
+    $lista = ['auth', 'user','login','Libros', 'Catalogo','registrer','ListaPrestamo','Devoluciones','Notificaciones']; // lista de rutas permitidas
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
@@ -43,8 +25,6 @@
         $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
     }
   
-    
-
     
     errorlogs::activa_error_logs(); //activamos los errors    
     if(isset($_GET['route'])){
