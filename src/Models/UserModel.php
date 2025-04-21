@@ -149,4 +149,14 @@ class UserModel extends connectionDB{
       die(json_encode(responseHTTP::status500()));
   }
 }
+
+public static function delete($id) {
+  $con = self::getConnection();
+  $query = "CALL BorrarUsuario(:Id_Usuarios)";
+  $stmt = $con->prepare($query);
+  $query->bindParam(':id', $id, PDO::PARAM_INT);
+  
+  return $query->execute();
+}
+
 }

@@ -1,6 +1,6 @@
 <?php
 //echo "llegue al recurso user";
-echo "¡Estoy llegando al backend!";
+
 require_once dirname(__DIR__, 2) . '/vendor/autoload.php'; // Cargar el autoload de Composer y está alternativa la saque de chat gpt (apuntado en notas)
 
 use App\Controllers\UserController; //cambio la importación a ver que tal
@@ -15,7 +15,7 @@ $headers = getallheaders(); //capturando todas las cabeceras que nos envian
 
 $app = new UserController($method, $route, $params, $data, $headers);
 
-$app->post('user/'); //llamada al metodo post con la ruta al recurso
+$app->post('user'); //llamada al metodo post con la ruta al recurso
 $app->delete('user'); //llamada de delete
 
 /*$caso = filter_input(INPUT_GET,"caso");
