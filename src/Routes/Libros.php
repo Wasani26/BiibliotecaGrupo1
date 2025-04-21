@@ -3,7 +3,7 @@ use App\Config\errorlogs;
 use App\Config\responseHTTP;
 use App\Config\Security;
 use App\Controllers\LibrosController;
-require_once 'controllers/LibrosController.php'; 
+require_once 'controllers/LibrosController.php';
   
 
 $method = strtolower($_SERVER['REQUEST_METHOD']); 

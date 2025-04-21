@@ -771,3 +771,47 @@ Stack trace:
 
 [13-Apr-2025 17:32:02 America/Tegucigalpa] La contraseña es incorrecta
 [13-Apr-2025 17:32:02 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[21-Apr-2025 10:17:34 America/Tegucigalpa] PHP Warning:  Undefined variable $lista in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 28
+[21-Apr-2025 10:17:34 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php:28
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(28): in_array('login', NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 28
+[21-Apr-2025 10:18:44 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[21-Apr-2025 10:18:55 America/Tegucigalpa] Error en la conexión a la BD! ERROR: PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php:29
+Stack trace:
+#0 C:\xampp\htdocs\BibliotecaGrupo1\src\DB\connectionDB.php(29): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\BibliotecaGrupo1\src\Models\UserModel.php(116): App\DB\connectionDB::getConnection()
+#2 C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php(101): App\Models\UserModel::Login('alejaalo@unah.h...', '99l2345678')
+#3 C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php(27): App\Controllers\UserController->getLogin('login')
+#4 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(40): require('C:\\xampp\\htdocs...')
+#5 {main}
+[21-Apr-2025 10:22:22 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[21-Apr-2025 10:22:22 America/Tegucigalpa] Conexión exitosa
+[21-Apr-2025 10:22:23 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[21-Apr-2025 10:22:23 America/Tegucigalpa] La contraseña es incorrecta
+[21-Apr-2025 10:22:23 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[21-Apr-2025 10:30:00 America/Tegucigalpa] PHP Warning:  Undefined array key "Telefono" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 59
+[21-Apr-2025 10:30:00 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 59
+[21-Apr-2025 10:30:54 America/Tegucigalpa] PHP Warning:  Undefined array key "Telefono" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 59
+[21-Apr-2025 10:30:54 America/Tegucigalpa] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 59
+[21-Apr-2025 10:31:23 America/Tegucigalpa] Array
+(
+    [Nombre] => Nataly
+    [Telefono] => 8875-2843
+    [Contrasena] => Nataly000
+    [confirmaContrasena] => Nataly000
+    [Correo_electronico] => nataly01@unah.hn
+    [Estado] => Activo
+    [Rol_Id_Rol] => 3
+)
+
+[21-Apr-2025 10:31:24 America/Tegucigalpa] Conexión exitosa
+[21-Apr-2025 10:31:24 America/Tegucigalpa] Conexión exitosa

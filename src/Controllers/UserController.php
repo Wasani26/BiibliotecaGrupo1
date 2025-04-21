@@ -110,44 +110,9 @@ public function __construct($method,$route,$params,$data,$headers){
     exit;
 }
 
-   
-        /*if($this-> method == 'get' && $endpoint == $this-> route){
-           
-           $email = strtolower($this->params[1]);
-           $pass = $this->params[2];
-           //algunas otras validaciones
-           if(empty($email) || empty($pass)){
-               echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));
-           } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-               echo json_encode(responseHTTP::status400('El correo debe llevar el formato correcto, proceda a corregir.'));
-           }else{
-           
-             UserModel::setCorreo_electronico($email);
-             UserModel::setContrasena($pass);
-             echo json_encode(UserModel::Login());
-
-        }
-         exit;
-     }*/
-     /*if (true) {
-        error_log("Entrando en la condición simplificada");
-        $email = strtolower($this->params[1]);
-        $pass = $this->params[2];
-        
-        // Respuesta de prueba
-        echo json_encode(["status" => "Condición simplificada funciona"]);
-        exit;
-    }*/
     
 }
 
-/*final public function delete($endpoint){
-   //vaidacion en este caso para metodo delete
-   if ($this->method == 'delete' && $endpoint == $this->route){
-    echo json_encode('delete');   
-     exit;
-     }
- }*/
  
 
 

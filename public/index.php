@@ -4,18 +4,13 @@
     use App\Config\Security;
 
     require dirname(__DIR__) . '\vendor\autoload.php';
-    require_once __DIR__ . '/../src/Routes/Libros.php';
+   
     
     $url = explode('/',$_GET['route']);
     $route = $url[0]??'';
 
-
-    
-   
-    /*$file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; */
-
-    
-    $lista = ['auth', 'user','login','Libros', 'Catalogo','registrer','ListaPrestamo','Devoluciones','Notificaciones']; // lista de rutas permitidas
+    $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
+    $lista = ['auth', 'user','login','Libros','Catalogo','registrer','ListaPrestamo','Devoluciones','Notificaciones']; // lista de rutas permitidas
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
