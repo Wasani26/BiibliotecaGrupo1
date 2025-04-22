@@ -7,33 +7,41 @@
    
     
     $url = explode('/',$_GET['route']);
-    $route = $url[0]??'';
+    $route = $url[0];
 
-    $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
+   /* $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; */
 
     // lista de rutas permitidas
     $lista = ['auth', 'user','login','libros','Catalogo','admin','ListaPrestamo','Devoluciones','Notificaciones','Biblio','category']; // lista de rutas permitidas
 
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
-    $file = '';
-    if($caso != ""){
-        $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
-    }else{
-        $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
-    }
+
   
     
     errorlogs::activa_error_logs(); //activamos los errors    
     if(isset($_GET['route'])){
-        if(!in_array($url[0], $lista)){
+        if(in_array($url[0], $lista)){
             //echo "La ruta no existe";
             echo json_encode(responseHTTP::status200('La ruta no existe!'));
             //error_log("Esto es una prueba de error...");
            //header(‘HTTP/1.1 404 Not Found’);
-            exit; //finalizamos la ejecución
+           // exit; //finalizamos la ejecución
+           $file = '';
+         if($caso != ""){
+            $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
+         }else{
+            $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
+         }
         }  
-        
+        else{
+            $file = dirname(__DIR__) . '/src/Views/' . $url[0] . '.php'; 
+            $res = responseHTTP::status200('La ruta' . $file . ' no existe.');
+            echo json_encode($res);
+            error_log($res['message']);
+            exit;
+        }
+
         //validamos que el archivo exista y que es legible
         if(!file_exists($file) || !is_readable($file)){
             //echo "El archivo no existe o no es legible";

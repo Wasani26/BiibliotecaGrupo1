@@ -839,3 +839,9 @@ Stack trace:
 [22-Apr-2025 12:10:02 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
 [22-Apr-2025 12:20:05 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
 [22-Apr-2025 12:20:48 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
+[22-Apr-2025 16:04:40 America/Tegucigalpa] PHP Warning:  Undefined variable $file in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 39
+[22-Apr-2025 16:04:40 America/Tegucigalpa] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 39
+[22-Apr-2025 16:05:42 America/Tegucigalpa] PHP Warning:  Undefined variable $file in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 39
+[22-Apr-2025 16:05:42 America/Tegucigalpa] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 39
+[22-Apr-2025 16:09:48 America/Tegucigalpa] PHP Warning:  Undefined variable $file in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 39
+[22-Apr-2025 16:09:48 America/Tegucigalpa] PHP Deprecated:  file_exists(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\xampp\htdocs\BibliotecaGrupo1\public\index.php on line 39
