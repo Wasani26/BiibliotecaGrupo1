@@ -833,3 +833,9 @@ Stack trace:
 
 [21-Apr-2025 18:35:45 America/Tegucigalpa] La contraseña es incorrecta
 [21-Apr-2025 18:35:45 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn
+[22-Apr-2025 12:05:27 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
+[22-Apr-2025 12:05:53 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
+[22-Apr-2025 12:07:25 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
+[22-Apr-2025 12:10:02 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
+[22-Apr-2025 12:20:05 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114
+[22-Apr-2025 12:20:48 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected token "final", expecting "(" in C:\xampp\htdocs\BibliotecaGrupo1\src\Controllers\UserController.php on line 114

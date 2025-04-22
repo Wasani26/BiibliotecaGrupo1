@@ -15,12 +15,12 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				company <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+				BibliotecaGrupo1 <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
 			</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
-					<img src="./assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
+					<img src="/BibliotecaGrupo1/src/Views/assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
 					<figcaption class="text-center text-titles">Administrador</figcaption>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
@@ -70,7 +70,7 @@
 							<a href=""><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
 						</li>
 						<li>
-							<a href=""><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
+							<a href=""><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Lectores</a>
 						</li>
 					</ul>
 				</li>
@@ -103,7 +103,7 @@
 		
     
         <!--Ya este es el contenido de la página que tocará dinamizar-->
-		<!-- Content page 
+		
 		<div class="container-fluid">
 			<div class="page-header">
 			  <h1 class="text-titles">System <small>Tiles</small></h1>
@@ -118,109 +118,51 @@
 					<i class="zmdi zmdi-account"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
-					<p class="full-box">7</p>
+					<p class="full-box">1</p>
 					<small>Register</small>
 				</div>
 			</article>
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Teacher
+					Bibliotecarios
 				</div>
 				<div class="full-box tile-icon text-center">
 					<i class="zmdi zmdi-male-alt"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
-					<p class="full-box">10</p>
+					<p class="full-box">1</p>
 					<small>Register</small>
 				</div>
 			</article>
 			<article class="full-box tile">
 				<div class="full-box tile-title text-center text-titles text-uppercase">
-					Student
+					Lectores/Usuarios
 				</div>
 				<div class="full-box tile-icon text-center">
 					<i class="zmdi zmdi-face"></i>
 				</div>
 				<div class="full-box tile-number text-titles">
-					<p class="full-box">70</p>
+					<p class="full-box">1</p>
 					<small>Register</small>
 				</div>
 			</article>
 		</div>
-		<div class="container-fluid">
-			<div class="page-header">
-			  <h1 class="text-titles">System <small>TimeLine</small></h1>
-			</div>
-			<section id="cd-timeline" class="cd-container">
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">1 - Name (Admin)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Start: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> End: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2016</span>
-                    </div>
-                </div>  
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">2 - Name (Teacher)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Start: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> End: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2016</span>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">3 - Name (Student)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Start: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> End: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2016</span>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img">
-                        <img src="assets/avatars/StudetMaleAvatar.png" alt="user-picture">
-                    </div>
-                    <div class="cd-timeline-content">
-                        <h4 class="text-center text-titles">4 - Name (Personal Ad.)</h4>
-                        <p class="text-center">
-                            <i class="zmdi zmdi-timer zmdi-hc-fw"></i> Start: <em>7:00 AM</em> &nbsp;&nbsp;&nbsp; 
-                            <i class="zmdi zmdi-time zmdi-hc-fw"></i> End: <em>7:17 AM</em>
-                        </p>
-                        <span class="cd-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i> 07/07/2016</span>
-                    </div>
-                </div>   
-            </section>
-
+		
 
 		</div>
-	</section>
-    -->
+	
 
 	<!--====== Scripts -->
-	<!--<script src="./js/jquery-3.1.1.min.js"></script>
-	<script src="./js/sweetalert2.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/material.min.js"></script>
-	<script src="./js/ripples.min.js"></script>
-	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="./js/main.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/jquery-3.1.1.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/sweetalert2.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/bootstrap.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/material.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/ripples.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/main.js"></script>
+	
 	<script>
 		$.material.init();
-	</script>-->
+	</script>
 </body>
 </html>
