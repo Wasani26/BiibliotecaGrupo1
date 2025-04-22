@@ -18,13 +18,7 @@ $app = new UserController($method, $route, $params, $data, $headers);
 $app->post('user'); //llamada al metodo post con la ruta al recurso
 $app->delete('user'); //llamada de delete
 
-/*$caso = filter_input(INPUT_GET,"caso");
-switch($caso){
-    case 'user':
-        $app = new UserController($method, $route, $params, $data, $headers);
-        $app->post('user');
-        exit;
-}*/
+
 
 
 echo json_encode(responseHTTP::status404()); //imprimamos un error en caso de no encontrar la ruta

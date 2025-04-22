@@ -821,3 +821,15 @@ Stack trace:
 #0 C:\xampp\htdocs\BibliotecaGrupo1\public\index.php(40): require()
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\Prestamos.php on line 56
+[21-Apr-2025 18:35:38 America/Tegucigalpa] Contraseña ingresada: 99l2345678
+[21-Apr-2025 18:35:44 America/Tegucigalpa] Conexión exitosa
+[21-Apr-2025 18:35:45 America/Tegucigalpa] Usuario encontrado: Array
+(
+    [Contrasena] => $2y$10$jzME1mAvvXp29GvhG/OpbeU55PPuRuRnbhBw7S
+    [IDToken] => 822d1f2c4f302e3469266491f0043b0e2938bdb51dfafdf9d2177b53b5c444e681d9371687ce65a534c498f2c0b278769eafdc74fb26d869d4e457c013da36b9
+    [Nombre] => Alejandra
+    [Rol_Id_Rol] => 2
+)
+
+[21-Apr-2025 18:35:45 America/Tegucigalpa] La contraseña es incorrecta
+[21-Apr-2025 18:35:45 America/Tegucigalpa] Contraseña no coincide para el correo: alejaalo@unah.hn

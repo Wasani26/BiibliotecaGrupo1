@@ -113,7 +113,7 @@ public function __construct($method,$route,$params,$data,$headers){
 final public function delete($endpoint) {
     if ($this->method == 'delete' && $endpoint == $this->route) {
         // Validar que venga el ID del usuario
-        /*if (empty($this->data['Id_Usuarios'])) {
+        if (empty($this->data['Id_Usuarios'])) {
             echo json_encode(responseHTTP::status400('El campo Id_Usuarios es requerido para eliminar el usuario'));
             exit;
         }
@@ -133,8 +133,8 @@ final public function delete($endpoint) {
         } else {
             echo json_encode(responseHTTP::status500('Error al intentar eliminar el usuario'));
         }
-        exit;*/
-        echo json_encode('delete');
+        exit;
+      
     }
 }
 

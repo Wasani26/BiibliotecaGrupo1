@@ -9,19 +9,6 @@ $("#MiForm").submit(function (event) {
     // Validación del correo y contraseña
     const claveRegex = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/; // Al menos 8 caracteres, 1 letra y 1 número.
     
-    /*if (user === "" || clave === "") {
-        Swal.fire({
-            title: "Debes llenar todos los campos!",
-            icon: "warning",
-            confirmButtonText: "OK"
-        }).then((result) => {
-            if(result.isConfirmed) {
-                 //Me manda al login.php otra vez
-                 window.location.href = "http://localhost/BibliotecaGrupo1/public/login/login.php"
-            }
-        });
-        return false;
-    }*/
 
         if (user === "" || clave === "") {
             Swal.fire({
@@ -48,13 +35,19 @@ $("#MiForm").submit(function (event) {
         type: 'POST', // Considera cambiar a POST para mayor seguridad.
         data: { usuario: user, clave: clave, caso: caso },
         success: function (resp) {
-            Swal.fire({
-                title: "Buen trabajo!",
-                text: "DATA: " + resp,
-                icon: "success"
-            });
-            window.location.href = ""; 
-        },
+           alert(resp);
+                var json = JSON.parse(resp);
+                //alert(json.access);
+                if(json.access == 1){
+                    window.location.href = "admin";
+                }else if(json.access == 2){
+                    window.location.href = "Biblio";
+                }else if(json.access == 3){
+                    window.location.href = "";
+                }else{
+                    window.location.href = "login";
+            }
+            },
         error: function (jqXHR, textStatus, errorThrown) {
             Swal.fire({
                 title: "Error en el servidor",
@@ -64,7 +57,11 @@ $("#MiForm").submit(function (event) {
             console.error('Error:', textStatus, errorThrown);
         }
     });
-});
+   });
+               
+           
+
+
 
 //validación html para crear un usuario
 
