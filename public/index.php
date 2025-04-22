@@ -10,7 +10,7 @@
     $route = $url[0]??'';
 
     $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; 
-    $lista = ['auth', 'user','login','Libros','Catalogo','registrer','ListaPrestamo','Devoluciones','Notificaciones',]; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','Libros','Catalogo','admin','ListaPrestamo','Devoluciones','Notificaciones','Biblio']; // lista de rutas permitidas
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
     $file = '';
