@@ -84,23 +84,6 @@ class LibrosModel extends connectionDB{
             return 0; 
         }
 
-    //conexion//
-    /*public function getAll() {
-        try {
-            $con = $this->db; // Asegúrate de que $this->db es una conexión válida
-            $query = "CALL ConsultarLibros()";
-            $stmt = $con->prepare($query);
-            $stmt->execute();
-            $res = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-            return $res;
-    
-        } catch (\PDOException $e) {
-            error_log("LibrosModel::getAll -> " . $e->getMessage());
-            return responseHTTP::status500(['error' => $e->getMessage()]);
-        }
-    }*/
-     
-
 
 }
 }
