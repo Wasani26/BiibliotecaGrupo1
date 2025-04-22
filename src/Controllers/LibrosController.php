@@ -10,10 +10,10 @@ class LibrosController {
     private $Libro; 
     private $tokenjwt; 
 
-    public function __construct($db) {  //Construccion de libro//
-        $this->Libro = new LibrosModel ($db); 
+    public function __construct($db) { //Construccion de libro//
+        $this->Libro = new LibrosModel ($db);
         $this->tokenjwt=new TokenJwt ();
-    }  
+    }
 
     public function obtenerLibros() {  //Obtener un libro//
         $Libro = $this->Libro->obtenerLibros();  
@@ -61,4 +61,5 @@ class LibrosController {
     }
 
 }
+
 ?>

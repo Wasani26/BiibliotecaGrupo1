@@ -248,5 +248,34 @@
 	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 
 	<script src="./js/main.js" ></script>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const listaPrestamosTabla = document.getElementById('lista-de-prestamos');
+
+            if (listaPrestamosTabla) {
+                listaPrestamosTabla.addEventListener('click', function(event) {
+                    if (event.target.classList.contains('btn-warning') || event.target.closest('.btn-warning')) {
+                        event.preventDefault();
+                        const botonEliminar = event.target.classList.contains('btn-warning') ? event.target : event.target.closest('.btn-warning');
+                        const formularioEliminar = botonEliminar.closest('.form-eliminar-prestamo');
+
+                        Swal.fire({
+                            title: '¿Estás seguro?',
+                            text: "¡No podrás revertir esto!",
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#d33',
+                            cancelButtonColor: '#3085d6',
+                            confirmButtonText: 'Sí, eliminarlo!'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                formularioEliminar.submit(); // Envía el formulario para eliminar
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

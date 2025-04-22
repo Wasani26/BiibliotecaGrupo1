@@ -4,30 +4,39 @@ use App\Config\responseHTTP;
 use App\Config\Security;
 use App\Controllers\LibrosController;
 require_once 'controllers/LibrosController.php';
-  
 
-$method = strtolower($_SERVER['REQUEST_METHOD']); 
-$route = $_GET['route']; //captura la ruta 
-$params = explode('/', $route); 
-$data = json_decode(file_get_contents("php://input"),true); 
-$headers = getallheaders(); 
 
-$controller = new LibrosController ($method, $route, $params, $data, $headers);
-$caso = filter_input(INPUT_GET, "caso");
-switch($caso) { // Evaluar $caso  //
-    case 'obtenerLibros':  
-        $controller->obtenerLibros($data); // Llamar método Obtener Libros  
-        break;  
-    case 'crearLibro': 
-      //  $data = json_decode(file_get_contents("php://input"), true)    
-        $controller->crearLibro($data);
+$db = $db ?? null;
+$controller = new LibrosController($db);
+
+$method = strtolower($_SERVER['REQUEST_METHOD']);
+$pathParts = explode('/', $_GET['route'] ?? '');
+$endpoint = $pathParts[1] ?? '';
+
+switch ($method) {
+    case 'get':
+        if (empty($endpoint)) {
+            $controller->obtenerLibros();
+        } 
         break;
-    case 'eliminarLibro':
-        $controller->eliminarLibro($data);
-    default:  
-        echo json_encode(responseHTTP::status200('La ruta no existe'));  
-        break;  
-}  
+    case 'post':
+        if (empty($endpoint)) {
+            $controller->crearLibro();
+        }
+        break;
+    case 'delete':
+        if (is_numeric($endpoint)) {
+            $controller->eliminarLibro($endpoint);
+        } else {
+            http_response_code(400);
+            echo json_encode(['status' => 'error', 'message' => 'Se requiere un ID para eliminar un libro']);
+        }
+        break;
+    default:
+        http_response_code(405);
+        echo json_encode(responseHTTP::status405('Método HTTP no permitido para /libros'));
+        break;
+}
 
 
 ?>
