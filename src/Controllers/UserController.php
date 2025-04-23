@@ -99,7 +99,7 @@ public function __construct($method,$route,$params,$data,$headers){
     // Llamada al modelo con los parámetros correctos
     try {
         $response = UserModel::Login($email, $pass);
-        echo json_encode($response); // Enviar la respuesta como JSON
+        return json_encode($response); // Enviar la respuesta como JSON
     } catch (Exception $e) {
        /* error_log("Error al llamar al modelo: " . $e->getMessage());*/
        
@@ -110,7 +110,6 @@ public function __construct($method,$route,$params,$data,$headers){
     exit;
 }
 
-final public function xgetAll
 final public function delete($endpoint) {
     if ($this->method == 'delete' && $endpoint == $this->route) {
         // Validar que venga el ID del usuario

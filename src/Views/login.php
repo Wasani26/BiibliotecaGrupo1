@@ -1,4 +1,6 @@
-
+<?php
+	echo "<p></p>";
+?>
 <html lang="es">
 <head>
 	<title>Login</title>
@@ -11,7 +13,7 @@
 <body>
     
 	<div class="full-box login-container cover">
-		<form  method="get" id="MiForm" name="MiForm" class="logInForm">
+	<form method="get" id="MiForm" name="MiForm" class="logInForm">
 			<p class="text-center text-muted"><img src="/BibliotecaGrupo1/src/Views/assets/img/Logo.png" witdh="200" height="200"></p>
 			<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
 			<div class="form-group label-floating">

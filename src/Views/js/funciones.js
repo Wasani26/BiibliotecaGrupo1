@@ -1,6 +1,5 @@
-
 $("#MiForm").submit(function (event) {
-    event.preventDefault(); // Evitamos el envío tradicional del formulario.
+    //event.preventDefault(); // Evitamos el envío tradicional del formulario.
 
     let user = $("#MiCorreo").val();
     let clave = $("#UserPass").val();
@@ -28,26 +27,20 @@ $("#MiForm").submit(function (event) {
         });
         return false;
     }
-    
+
     // Realizar petición AJAX
     $.ajax({
         url: 'login',
         type: 'get', // Considera cambiar a POST para mayor seguridad.
         data: { usuario: user, clave: clave, caso: caso },
         success: function (resp) {
-           /*alert(resp);
-                var json = JSON.parse(resp);
-                //alert(json.access);
-                if(json.access == 1){
-                    window.location.href = "admin";
-                }else if(json.access == 2){
-                    window.location.href = "Biblio";
-                }else if(json.access == 3){
-                    window.location.href = "";
-                }else{
-                    window.location.href = "login";
-            }*/
-            },
+            alert("¡Bienvenido!");
+            switch (resp) {
+                case 1: window.location.href = "admin"; break;
+                case 2: window.location.href = "Biblio"; break;
+                case 3: window.location.href = "login"; break;
+            }
+        },
         error: function (jqXHR, textStatus, errorThrown) {
             Swal.fire({
                 title: "Error en el servidor",
@@ -128,7 +121,7 @@ $("#FormCrearUsuario").submit(function (event) {
     console.log(datos)
 
     $.ajax({
-        url: 'user',
+        url: 'user?route=user/&caso=user',
         type: "POST",
         data: JSON.stringify(datos),
         contentType: "application/json",
@@ -154,4 +147,3 @@ $("#FormCrearUsuario").submit(function (event) {
     });
     
 });
-

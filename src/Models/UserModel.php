@@ -124,7 +124,7 @@ class UserModel extends connectionDB{
       if($stmt->rowCount() == 0){
           return responseHTTP::status400('Usuario o Contraseña incorrectas!!');
       }else{
-        foreach ($stmt as $val) {
+        /*foreach ($stmt as $val) {
          error_log("Usuario encontrado: " . print_r($val, true));
           if (Security::validatePassword($password, $val['Contrasena'])) {
               $payload = ['IDToken' => $val['IDToken']];
@@ -137,10 +137,11 @@ class UserModel extends connectionDB{
               return $data;
           } else {
               error_log("Contraseña no coincide para el correo: $correo");
-              /*error_log("Contraseña no válida: ingresada ($password), almacenada ({$val['Contrasena']})");*/
+              error_log("Contraseña no válida: ingresada ($password), almacenada ({$val['Contrasena']})");
               return responseHTTP::status400('Usuario o Contraseña incorrectas!');
           }
-      }
+        }*/
+        return $stmt->fetch(\PDO::FETCH_ASSOC);
       
       }
   } catch (\PDOException $e){

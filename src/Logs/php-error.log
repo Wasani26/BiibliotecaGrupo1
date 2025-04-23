@@ -859,3 +859,5 @@ Stack trace:
 #1 {main}
   thrown in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 20
 [22-Apr-2025 19:05:29 America/Tegucigalpa] PHP Parse error:  syntax error, unexpected variable "$_GET" in C:\xampp\htdocs\BibliotecaGrupo1\src\Routes\login.php on line 20
+[22-Apr-2025 20:46:20 America/Tegucigalpa] Contraseña ingresada: f2345678999
+[22-Apr-2025 20:47:22 America/Tegucigalpa] Contraseña ingresada: f234567899
