@@ -12,7 +12,7 @@
    /* $file = dirname(__DIR__) . '/src/Routes/' . $url[0] . '.php'; */
 
     // lista de rutas permitidas
-    $lista = ['auth', 'user','login','libros','Catalogo','admin','ListaPrestamo','Devoluciones','Notificaciones','Biblio','category']; // lista de rutas permitidas
+    $lista = ['auth', 'user','login','libros','Catalogo','admin','ListaPrestamo','CrearPrestamo','ActualizarPrestamo','ListaDevoluciones','Notificaciones','Biblio','category']; // lista de rutas permitidas
 
     $caso = '';
     $caso  = filter_input(INPUT_GET,"caso");
