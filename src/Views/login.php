@@ -11,7 +11,7 @@
 <body>
     
 	<div class="full-box login-container cover">
-		<form action="" method="POST" id="MiForm" name="MiForm" class="logInForm">
+		<form  method="get" id="MiForm" name="MiForm" class="logInForm">
 			<p class="text-center text-muted"><img src="/BibliotecaGrupo1/src/Views/assets/img/Logo.png" witdh="200" height="200"></p>
 			<p class="text-center text-muted text-uppercase">Inicia sesión con tu cuenta</p>
 			<div class="form-group label-floating">
@@ -29,23 +29,23 @@
 			</div>
           <!--Si no tienes cuenta-->
 			<div class="">
-                      <p class="" >No tienes Cuenta? <a href="/BibliotecaGrupo1/public/registrer/" action="">Crea una aqui</a></p>
+                      <p class="" >No tienes Cuenta? <a href="registrer" action="">Crea una aqui</a></p>
                     </div>
 
 		</form>
 	</div>
-	<!--====== Scripts
-	/*<script src="./js/jquery-3.1.1.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/material.min.js"></script>
-	<script src="./js/ripples.min.js"></script>
-	<script src="./js/sweetalert2.min.js"></script>
-	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="./js/main.js"></script>
+	<!--====== Scripts-->
+	<script src="/BibliotecaGrupo1/src/Views/js/jquery-3.1.1.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/bootstrap.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/material.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/ripples.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/sweetalert2.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="/BibliotecaGrupo1/src/Views/js/main.js"></script>
 	
 	<script>
 		$.material.init();
-	</script>-->
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="/BibliotecaGrupo1/src/Views/js/funciones.js"></script>

@@ -10,21 +10,26 @@ $route = $_GET['route']; //captura la ruta
 $params = explode('/', $route);
 $data = json_decode(file_get_contents("php://input"),true);
 $headers = getallheaders();
+$caso = filter_input(INPUT_GET, 'caso');
 
-/*var_dump($params[1], $params[2]);*/
+if ($caso != ''){
+    $params += [ 1 => filter_input(INPUT_GET, 'usuario'),
+                2 => filter_input(INPUT_GET, 'clave') ];
+}
+
 
 // El correo y la contraseña ya están en $params según la estructura de la ruta
-$email = isset($params[1]) ? $params[1] : null;
-$pass = isset($params[2]) ? $params[2] : null;
+/*$email = isset($params[1]) ? $params[1] : null;
+$pass = isset($params[2]) ? $params[2] : null;*/
 // Registra los valores obtenidos para confirmarlos
 /*error_log("Correo capturado desde ruta: $email, Contraseña capturada: $pass");*/
 /*error_log("Segmentos de ruta capturados: " . print_r($params, true));*/
 
 
 /*error_log("Creando instancia de UserController");*/
-$app = new UserController($method, $route, $params, $data, $headers);
+/*$app = new UserController($method, $route, $params, $data, $headers);*/
 /*error_log("Instancia creada, llamando a getLogin");*/
-$app->getLogin('login');
+//$app->getLogin('login');
 /*error_log("getLogin ejecutado");*/
 
 

@@ -28,11 +28,11 @@ $("#MiForm").submit(function (event) {
         });
         return false;
     }
-
+    
     // Realizar petición AJAX
     $.ajax({
         url: 'login',
-        type: 'post', // Considera cambiar a POST para mayor seguridad.
+        type: 'get', // Considera cambiar a POST para mayor seguridad.
         data: { usuario: user, clave: clave, caso: caso },
         success: function (resp) {
            /*alert(resp);
@@ -46,7 +46,7 @@ $("#MiForm").submit(function (event) {
                     window.location.href = "";
                 }else{
                     window.location.href = "login";
-            }*/alert(resp);
+            }*/
             },
         error: function (jqXHR, textStatus, errorThrown) {
             Swal.fire({
@@ -128,7 +128,7 @@ $("#FormCrearUsuario").submit(function (event) {
     console.log(datos)
 
     $.ajax({
-        url: 'user?route=user/&caso=user',
+        url: 'user',
         type: "POST",
         data: JSON.stringify(datos),
         contentType: "application/json",
